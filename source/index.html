@@ -43,22 +43,22 @@
       <p class="products-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       <table class="products-item__features">
         <tr>
-          <td>Цвет:</td>
-          <td>Тиффани /серый</td>
+          <td class="products-item__cols products-item__cols--frist-first">Цвет:</td>
+          <td class="products-item__cols products-item__cols--first-second">Тиффани /серый</td>
         </tr>
         <tr>
-          <td>Диаметр:</td>
-          <td>25 см</td>
+          <td class="products-item__cols products-item__cols second-first">Диаметр:</td>
+          <td class="products-item__cols products-item__cols--second-second">25 см</td>
         </tr>
         <tr>
-          <td>Высота:</td>
-          <td>15 см</td>
+          <td class="products-item__cols products-item__cols--third-first">Высота:</td>
+          <td class="products-item__cols products-item__cols--third-second">15 см</td>
         </tr>
       </table>
       <div class="products-item__buy">
         <img class="products-item__image" src="#" alt="Вязанные корзинки">
         <p class="products-item__price">Цена: 990 руб.</p>
-        <a class="products-item__link" href="#">Заказать</a>
+        <a class="products-item__link button-link" href="#">Заказать</a>
       </div>
     </div>
   </section>
@@ -94,7 +94,7 @@
     <p class="reviews__user-contact">@misssssiskras</p>
     <button class="reviews__button reviews__button--prew" type="button">Назад</button>
     <button class="reviews__button reviews__button--next" type="button">Вперед</button>
-    <a class="reviews__send" href="#">Написать</a>
+    <a class="reviews__send button-link" href="#">Написать</a>
   </article>
   <section class="contacts">
     <h3>Контакты</h3>
@@ -108,22 +108,22 @@
       </li>
     </ul>
     <img class="conatcts__image-map" src="#" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-    <a class="contacts__send-us" href="#">Напишите нам</a>
+    <a class="contacts__send-us button-link" href="#">Напишите нам</a>
   </section>
-  <section><!-- Модалка-->
-    <p>Добавить в корзину</p>
-    <p>Выберите размер:</p>
-    <form action="#" method="post">
-      <label>
+  <section class="modal"><!-- Модалка-->
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <p class="modal__option">Выберите размер:</p>
+    <form class="modal__form" action="#" method="post">
+      <label class="modal__s">
         <input type="radio">S
       </label>
-      <label>
+      <label class="modal__m">
         <input type="radio">M
       </label>
-      <label>
+      <label class="modal__l">
         <input type="radio">L
       </label>
-      <button type="submit">Добавить</button>
+      <button class="button modal__button" type="submit">Добавить</button>
     </form>
   </section>
 </main>

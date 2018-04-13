@@ -5,95 +5,111 @@
   <title>HTML Academy: Мишка</title>
 </head>
 <body>
-<header>
-  <a href="index.html"><img src="#" alt="Логотип"></a>
-  <button type="button"></button>
-  <ul>
-    <li><a href="#">Каталог товаров</a></li>
-    <li><a href="#">Вязание на заказ</a></li>
-    <li><a href="#">Поиск по сайту</a></li>
-    <li><a href="#">Корзина: пока пуста</a></li>
+<header class="page-header">
+  <a class="page-header__logo-image" href="index.html"><img src="#" alt="Логотип Мишка"></a>
+  <button class="page-header__open-button" type="button">Открыть меню</button>
+  <ul class="site-list">
+    <li class="site-list__item">
+      <a href="#">Каталог товаров</a>
+    </li>
+    <li class="site-list__item">
+      <a href="#">Вязание на заказ</a>
+    </li>
+    <li class="site-list__item">
+      <a href="#">Поиск по сайту</a>
+    </li>
+    <li class="site-list__item">
+      <a href="#">Корзина: пока пуста</a>
+    </li>
   </ul>
 </header>
-<main>
-  <h1>Вязание на заказ</h1>
-  <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-  <form action="#" method="post">
-    <section>
-      <p>Тип</p>
-      <label>
+<main class="page-main">
+  <h1 class="page-main__title">Вязание на заказ</h1>
+  <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+  <form class="main-form" action="#" method="post">
+    <section class="main-form__radio">
+      <p class="main-form__type">Тип</p>
+      <label class="main-form__radio-item">
         <input type="radio">Аксессуар для интерьера
       </label>
-      <label>
+      <label class="main-form__radio-item">
         <input type="radio">Детская игрушка
       </label>
     </section>
-    <section>
-      <p>Цвет</p>
-      <label>
+    <section class="main-form__check">
+      <p class="main-form__color">Цвет</p>
+      <label class="main-form__check-item">
         <input type="checkbox">Белый
       </label>
-      <label>
+      <label class="main-form__check-item">
         <input type="checkbox">Серый
       </label>
-      <label>
+      <label class="main-form__check-item">
         <input type="checkbox">Тиффани
       </label>
-      <label>
+      <label class="main-form__check-item">
         <input type="checkbox">Черный
       </label>
-      <label>
+      <label class="main-form__check-item">
         <input type="checkbox">Розовый
       </label>
-      <label>
+      <label class="main-form__check-item">
         <input type="checkbox">Оранжевый
       </label>
     </section>
-    <section>
-      <p>ФИО</p>
-      <label>
+    <section class="main-form__users-info">
+      <p class="main-form__initials">ФИО</p>
+      <label class="main-form__user-name">
         Имя:
         <input type="text" placeholder="Введите ваше имя*">
       </label>
-      <label>
+      <label class="main-form__user-surname">
         Фамилия:
         <input type="text" placeholder="Укажите фамилию*">
       </label>
-      <label>
+      <label class="main-form__user-patronymic">
         Отчество:
         <input type="text" placeholder="Отчество, если желаете*">
       </label>
     </section>
-    <section>
-      <label>
+    <section class="main-form__phone">
+      <label class="main-form__user-phone">
         Тел
         <input type="tel" placeholder="+7 XXX XX XX*">
       </label>
     </section>
-    <section>
-      <label>
+    <section class="main-form__email">
+      <label class="main-form__user-email">
         e-mail
         <input type="email" placeholder="Ваш Email*">
       </label>
     </section>
-    <section>
-      <label>
+    <section class="main-form__wishes">
+      <label class="main-form__user-wishes">
         Доп
         <textarea cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </label>
     </section>
-    <p>*Поля обязательные для заполнения</p>
-    <a href="#">Отправить заказ</a>
+    <small class="main-form__legend"><sup>*</sup>Поля обязательные для заполнения</small>
+    <a class="button-link main-form__send" href="#">Отправить заказ</a>
   </form>
 </main>
-<footer>
-  <ul>
-    <li><a href="#">Инстаграм</a></li>
-    <li><a href="#">Фейсбук</a></li>
-    <li><a href="#">Твиттер</a></li>
+<footer class="page-footer">
+  <ul class="page-footer__list">
+    <li class="page-footer__item page-footer__item--inst">
+      <a href="#">Инстаграм</a>
+    </li>
+    <li class="page-footer__item page-footer__item--fb">
+      <a href="#">Фейсбук</a>
+    </li>
+    <li class="page-footer__item page-footer__item--tw">
+      <a href="#">Твиттер</a>
+    </li>
   </ul>
-  <p>Разработано</p>
-  <a href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt="HtmlAcademyLogo"></a>
+  <p class="page-footer__studio">Разработано</p>
+  <a href="https://htmlacademy.ru/intensive/adaptive">
+    <img class="page-footer__logo" src="#" alt="HtmlAcademyLogo">
+  </a>
 </footer>
 </body>
 </html>
