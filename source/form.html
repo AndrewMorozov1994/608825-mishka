@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo-image" href="index.html"><img src="#" alt="Логотип Мишка"></a>
+      <button class="page-header__open-button" type="button">Открыть меню</button>
+      <ul class="site-list">
+        <li class="site-list__item">
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Вязание на заказ</h1>
+      <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="main-form" action="#" method="post">
+        <section class="main-form__section main-form__section--radio">
+          <p class="main-form__type">Тип</p>
+          <label class="main-form__item">
+            <input type="radio">Аксессуар для интерьера
+          </label>
+          <label class="main-form__item">
+            <input type="radio">Детская игрушка
+          </label>
+        </section>
+        <section class="main-form__section main-form__section--check">
+          <p class="main-form__color">Цвет</p>
+          <label class="main-form__item">
+            <input type="checkbox">Белый
+          </label>
+          <label class="main-form__item">
+            <input type="checkbox">Серый
+          </label>
+          <label class="main-form__item">
+            <input type="checkbox">Тиффани
+          </label>
+          <label class="main-form__item">
+            <input type="checkbox">Черный
+          </label>
+          <label class="main-form__item">
+            <input type="checkbox">Розовый
+          </label>
+          <label class="main-form__item">
+            <input type="checkbox">Оранжевый
+          </label>
+        </section>
+        <section class="main-form__users-info">
+          <p class="main-form__initials">ФИО</p>
+          <label class="main-form__user-name">
+            Имя:
+            <input type="text" placeholder="Введите ваше имя*">
+          </label>
+          <label class="main-form__user-surname">
+            Фамилия:
+            <input type="text" placeholder="Укажите фамилию*">
+          </label>
+          <label class="main-form__user-patronymic">
+            Отчество:
+            <input type="text" placeholder="Отчество, если желаете*">
+          </label>
+        </section>
+        <section class="main-form__phone">
+          <label class="main-form__user-phone">
+            Тел
+            <input type="tel" placeholder="+7 XXX XX XX*">
+          </label>
+        </section>
+        <section class="main-form__email">
+          <label class="main-form__user-email">
+            e-mail
+            <input type="email" placeholder="Ваш Email*">
+          </label>
+        </section>
+        <section class="main-form__wishes">
+          <label class="main-form__user-wishes">
+            Доп
+            <textarea cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </label>
+        </section>
+        <small class="main-form__legend"><sup>*</sup>Поля обязательные для заполнения</small>
+        <button type="submit" class="button-link main-form__send">Отправить заказ</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <ul class="page-footer__list">
+        <li class="page-footer__item page-footer__item--inst">
+          <a href="#">Инстаграм</a>
+        </li>
+        <li class="page-footer__item page-footer__item--fb">
+          <a href="#">Фейсбук</a>
+        </li>
+        <li class="page-footer__item page-footer__item--tw">
+          <a href="#">Твиттер</a>
+        </li>
+      </ul>
+      <p class="page-footer__studio">Разработано</p>
+      <a href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="page-footer__logo" src="#" alt="HtmlAcademyLogo">
+      </a>
+    </footer>
+  </body>
+</html>
