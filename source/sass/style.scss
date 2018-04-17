@@ -1,2 +1,26 @@
-body { background: red; }
+@import "build/page-header.scss";
+@import "build/about-us.scss";
+@import "build/button.scss";
+@import "build/contacts.scss";
+@import "build/modal.scss";
+@import "build/page-footer.scss";
+@import "build/page-main.scss";
+@import "build/products.scss";
+@import "build/products-item.scss";
+@import "build/products-title.scss";
+@import "build/review.scss";
+@import "build/site-list.scss";
+@import "build/button-link.scss";
 
+body {
+  background: white;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}

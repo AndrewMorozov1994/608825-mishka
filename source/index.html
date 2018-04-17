@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,7 +12,7 @@
       <button class="page-header__open-button" type="button">Открыть меню</button>
       <ul class="site-list">
         <li class="site-list__item">
-          <a href="#">Каталог товаров</a>
+          <a href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
           <a href="form.html">Вязание на заказ</a>
@@ -26,7 +28,7 @@
     <main class="page-main">
       <section class="products">
         <div class="products-title">
-          <h2>Милые штуки ручной работы для дома</h2>
+          <h2 class="products-title__title">Милые штуки ручной работы для дома</h2>
           <img class="products-title__image" src="#" alt="Милые штучки ручной работы">
           <ul class="products-title__list-container">
             <li class="products-title__list-item products-title__list-item--interior">
@@ -38,7 +40,7 @@
           </ul>
         </div>
         <div class="products-item">
-          <h2>Вязанные корзинки</h2>
+          <h2 class="products-item__title">Вязанные корзинки</h2>
           <p class="products-item__item-of-week">Товар недели</p>
           <p class="products-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="products-item__features">
@@ -63,9 +65,9 @@
         </div>
       </section>
       <section class="about-us">
-        <h2>Коротко о нас:</h2>
+        <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item about-us__item--eco">
+          <li class="about-us__item">
             Экологически чистые материалы
           </li>
           <li class="about-us__item">
@@ -85,19 +87,19 @@
           </li>
         </ul>
       </section>
-      <article class="reviews">
-        <h2>Отзывы</h2>
-        <p class="reviews__user-review">
+      <article class="review">
+        <h2 class="review__title">Отзывы</h2>
+        <p class="review__user-review">
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
         </p>
-        <p class="reviews__user-name">Анастасия Красильникова</p>
-        <p class="reviews__user-contact">@misssssiskras</p>
-        <button class="reviews__button reviews__button--prew" type="button">Назад</button>
-        <button class="reviews__button reviews__button--next" type="button">Вперед</button>
-        <a class="reviews__send button-link" href="#">Написать</a>
+        <p class="review__user-name">Анастасия Красильникова</p>
+        <p class="review__user-contact">@misssssiskras</p>
+        <button class="review__button review__button--prew" type="button">Назад</button>
+        <button class="review__button review__button--next" type="button">Вперед</button>
+        <a class="review__send button-link" href="#">Написать</a>
       </article>
       <section class="contacts">
-        <h3>Контакты</h3>
+        <h3 class="contacts__title">Контакты</h3>
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--info">e-mail:</li>
           <li class="contacts__item contacts__item--email">info@mimimishkashop.ru</li>

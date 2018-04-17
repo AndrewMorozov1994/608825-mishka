@@ -1,0 +1,32 @@
+.products-item {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.products-item__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.products-item__item-of-week {
+  color: #63d1bb;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.products-item__price {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.products-item__image {
+  background-color: #f1f1f1;
+}
+
+.products-item__link {
+  font-size: 17px;
+}
