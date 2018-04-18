@@ -11,16 +11,4 @@
 @import "build/review.scss";
 @import "build/site-list.scss";
 @import "build/button-link.scss";
-
-body {
-  background: white;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
-}
+@import "global.scss";
