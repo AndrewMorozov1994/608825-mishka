@@ -26,20 +26,22 @@
       </ul>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Вязание на заказ</h1>
+      <div class="page-main__title-wrapper">
+        <h1 class="page-main__title">Вязание на заказ</h1>
+      </div>
       <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="main-form" action="#" method="post">
         <section class="main-form__section main-form__section--radio">
-          <p class="main-form__type">Тип</p>
+          <p class="main-form__description">Тип</p>
           <label class="main-form__item">
-            <input type="radio">Аксессуар для интерьера
+            <input type="radio" name="form-radio">Аксессуар для интерьера
           </label>
           <label class="main-form__item">
-            <input type="radio">Детская игрушка
+            <input type="radio" name="form-radio">Детская игрушка
           </label>
         </section>
         <section class="main-form__section main-form__section--check">
-          <p class="main-form__color">Цвет</p>
+          <p class="main-form__description">Цвет</p>
           <label class="main-form__item">
             <input type="checkbox">Белый
           </label>
@@ -60,7 +62,7 @@
           </label>
         </section>
         <section class="main-form__section main-form__section--users-info">
-          <p class="main-form__initials">ФИО</p>
+          <p class="main-form__description">ФИО</p>
           <label class="main-form__user-name">
             Имя:
             <input type="text" placeholder="Введите ваше имя*">
@@ -76,19 +78,19 @@
         </section>
         <section class="main-form__section main-form__section--phone">
           <label class="main-form__user-phone">
-            Тел
+            <p class="main-form__description">Тел</p>
             <input type="tel" placeholder="+7 XXX XX XX*">
           </label>
         </section>
         <section class="main-form__section main-form__section--email">
           <label class="main-form__user-email">
-            e-mail
+            <p class="main-form__description">e-mail</p>
             <input type="email" placeholder="Ваш Email*">
           </label>
         </section>
         <section class="main-form__section main-form__section--wishes">
           <label class="main-form__user-wishes">
-            Доп
+            <p class="main-form__description">Доп</p>
             <textarea cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
         </section>
