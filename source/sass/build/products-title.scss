@@ -1,0 +1,32 @@
+.products-title__title {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.products-title__list-container {
+  list-style: none;
+}
+
+.products-title__image {
+  background-color: #fcfcfc;
+}
+
+.products-title__list-item {
+  a {
+    font-size: 19px;
+    color: white;
+    background-color: #63d1bb;
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  &--toys a {
+    background-color: #56c3b2;
+  }
+}
+
+.products-title__link:nth-last-child(2) {
+  background-color: red;
+}

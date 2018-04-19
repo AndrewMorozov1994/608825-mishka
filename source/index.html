@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logo-image" src="#" alt="Логотип Мишка">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
       <button class="page-header__open-button" type="button">Открыть меню</button>
       <ul class="site-list">
         <li class="site-list__item">
-          <a href="#">Каталог товаров</a>
+          <a href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
           <a href="form.html">Вязание на заказ</a>
@@ -26,8 +27,8 @@
     <main class="page-main">
       <section class="products">
         <div class="products-title">
-          <h2>Милые штуки ручной работы для дома</h2>
-          <img class="products-title__image" src="#" alt="Милые штучки ручной работы">
+          <h2 class="products-title__title">Милые штуки ручной работы для дома</h2>
+          <img class="products-title__image" src="img/hero-mobile@1x.jpg" width="575" height="373" alt="Милые штучки ручной работы">
           <ul class="products-title__list-container">
             <li class="products-title__list-item products-title__list-item--interior">
               <a href="#">Предметы интерьера</a>
@@ -38,7 +39,7 @@
           </ul>
         </div>
         <div class="products-item">
-          <h2>Вязанные корзинки</h2>
+          <h2 class="products-item__title">Вязанные корзинки</h2>
           <p class="products-item__item-of-week">Товар недели</p>
           <p class="products-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="products-item__features">
@@ -56,16 +57,16 @@
             </tr>
           </table>
           <div class="products-item__buy">
-            <img class="products-item__image" src="#" alt="Вязанные корзинки">
+            <img class="products-item__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
             <p class="products-item__price">Цена: 990 руб.</p>
             <a class="products-item__link button-link" href="#">Заказать</a>
           </div>
         </div>
       </section>
       <section class="about-us">
-        <h2>Коротко о нас:</h2>
+        <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item about-us__item--eco">
+          <li class="about-us__item">
             Экологически чистые материалы
           </li>
           <li class="about-us__item">
@@ -85,19 +86,19 @@
           </li>
         </ul>
       </section>
-      <article class="reviews">
-        <h2>Отзывы</h2>
-        <p class="reviews__user-review">
+      <article class="review">
+        <h2 class="review__title">Отзывы</h2>
+        <p class="review__user-review">
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
         </p>
-        <p class="reviews__user-name">Анастасия Красильникова</p>
-        <p class="reviews__user-contact">@misssssiskras</p>
-        <button class="reviews__button reviews__button--prew" type="button">Назад</button>
-        <button class="reviews__button reviews__button--next" type="button">Вперед</button>
-        <a class="reviews__send button-link" href="#">Написать</a>
+        <p class="review__user-name">Анастасия Красильникова</p>
+        <p class="review__user-contact">@misssssiskras</p>
+        <button class="review__button review__button--prew" type="button">Назад</button>
+        <button class="review__button review__button--next" type="button">Вперед</button>
+        <a class="review__send button-link" href="#">Написать</a>
       </article>
       <section class="contacts">
-        <h3>Контакты</h3>
+        <h3 class="contacts__title">Контакты</h3>
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--info">e-mail:</li>
           <li class="contacts__item contacts__item--email">info@mimimishkashop.ru</li>
@@ -107,7 +108,7 @@
             д. 19/8, офис 101
           </li>
         </ul>
-        <img class="contacts__image-map" src="#" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <img class="contacts__image-map" src="img/map-mobile@1x.jpg" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         <a class="contacts__send-us button-link" href="#">Напишите нам</a>
       </section>
       <section class="modal"><!-- Модалка-->
@@ -115,13 +116,13 @@
         <p class="modal__option">Выберите размер:</p>
         <form class="modal__form" action="#" method="post">
           <label class="modal__label">
-            <input type="radio">S
+            <input type="radio" name="radio">S
           </label>
           <label class="modal__label">
-            <input type="radio">M
+            <input type="radio" name="radio">M
           </label>
           <label class="modal__label">
-            <input type="radio">L
+            <input type="radio" name="radio">L
           </label>
           <button class="button modal__button" type="submit">Добавить</button>
         </form>
@@ -141,7 +142,7 @@
       </ul>
       <p class="page-footer__studio">Разработано</p>
       <a href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="page-footer__logo" src="#" alt="HtmlAcademyLogo">
+        <img class="page-footer__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HtmlAcademyLogo">
       </a>
     </footer>
   </body>

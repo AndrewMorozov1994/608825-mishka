@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("OpenSans"),
+    url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("OpenSans"),
+    url("../fonts/opensansbold.woff") format("woff"),
+    url("../fonts/opensansbold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  background: white;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
