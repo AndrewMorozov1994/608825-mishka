@@ -5,15 +5,19 @@
 }
 
 .products-title__list-container {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .products-title__image {
+  display: block;
   background-color: #fcfcfc;
 }
 
 .products-title__list-item {
   a {
+    width: 320px;
     font-size: 19px;
     color: white;
     background-color: #63d1bb;

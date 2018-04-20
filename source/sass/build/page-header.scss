@@ -1,0 +1,16 @@
+.page-header {
+  width: auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.page-header__logo-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-header__open-button {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
