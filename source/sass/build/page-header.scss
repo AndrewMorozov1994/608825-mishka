@@ -1,7 +1,8 @@
 .page-header {
-  width: auto;
+  width: 320px;
   padding: 0 20px;
   position: relative;
+  margin: 0 auto;
 }
 
 .page-header__logo-image {
@@ -16,6 +17,10 @@
 }
 
 @media (min-width: 768px) {
+  .page-header {
+    width: 768px;
+  }
+
   .page-header__logo-image {
     margin-left: 10px;
   }
@@ -23,11 +28,5 @@
   .page-header__site-list-wrapper {
     display: flex;
     flex-direction: column-reverse;
-  }
-
-  .page-header__crate-and-search {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
   }
 }
