@@ -1,7 +1,8 @@
 .page-header {
-  width: auto;
+  width: 320px;
   padding: 0 20px;
   position: relative;
+  margin: 0 auto;
 }
 
 .page-header__logo-image {
@@ -20,6 +21,10 @@
 }
 
 @media (min-width: 768px) {
+  .page-header {
+    width: 768px;
+  }
+
   .page-header__logo-image {
     margin-left: 10px;
   }
@@ -27,6 +32,7 @@
   .page-header__delivery {
     display: block;
   }
+<<<<<<< HEAD
 
   //.page-header__site-list-wrapper {
   //  display: flex;
@@ -38,4 +44,6 @@
     justify-content: flex-end;
     margin-left: auto;
   }
+=======
+>>>>>>> 64314d2d68207aa1194ac9f0898add370b86c011
 }

@@ -25,5 +25,19 @@
   .site-list {
     display: flex;
     margin-left: 0;
+<<<<<<< HEAD
+=======
+    min-width: 668px;
+
+    .site-list__item:nth-child(3) {
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+    }
+>>>>>>> 64314d2d68207aa1194ac9f0898add370b86c011
   }
 }
