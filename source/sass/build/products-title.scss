@@ -2,6 +2,13 @@
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
+  width: 250px;
+}
+
+.products-title__title-wrapper {
+  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-position: top center;
+  min-height: 285px;
 }
 
 .products-title__list-container {

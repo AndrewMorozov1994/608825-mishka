@@ -25,25 +25,39 @@
     width: 768px;
   }
 
+  .page-header__open-button {
+    display: none;
+  }
+
   .page-header__logo-image {
     margin-left: 10px;
   }
 
   .page-header__delivery {
     display: block;
+    text-align: end;
+    margin-top: -24px;
   }
-<<<<<<< HEAD
-
-  //.page-header__site-list-wrapper {
-  //  display: flex;
-  //  flex-direction: column-reverse;
-  //}
 
   .page-header__crate-and-search {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
   }
-=======
->>>>>>> 64314d2d68207aa1194ac9f0898add370b86c011
+
+  .page-header__site-list-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo-image {
+    margin: 0 auto;
+  }
 }
