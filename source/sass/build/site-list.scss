@@ -7,6 +7,10 @@
   .site-list__item:nth-child(3) {
     display: none;
   }
+
+  .site-list__item:nth-child(4) {
+    display: none;
+  }
 }
 
 .site-list__item {
@@ -21,9 +25,5 @@
   .site-list {
     display: flex;
     margin-left: 0;
-
-    .site-list__item:nth-child(3) {
-      display: block;
-    }
   }
 }
