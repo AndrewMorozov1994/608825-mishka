@@ -1,6 +1,6 @@
 .page-header {
   width: 260px;
-  padding: 0 20px;
+  padding: 0 30px;
   position: relative;
   margin: 0 auto;
 }
@@ -20,9 +20,14 @@
   display: none;
 }
 
+.page-header__site-list-wrapper {
+  margin-left: 45px;
+}
+
 @media (min-width: 768px) {
   .page-header {
-    width: 768px;
+    width: 668px;
+    padding: 0 50px;
   }
 
   .page-header__open-button {
@@ -34,6 +39,8 @@
   }
 
   .page-header__delivery {
+    font-size: 15px;
+    font-weight: 400;
     display: block;
     text-align: end;
     margin-top: -24px;
@@ -48,6 +55,7 @@
   .page-header__site-list-wrapper {
     display: flex;
     flex-direction: column-reverse;
+    margin-left: 0;
   }
 }
 

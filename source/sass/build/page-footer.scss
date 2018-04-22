@@ -25,6 +25,32 @@
   line-height: 18px;
 }
 
+.page-footer__logo-mishka {
+  display: none;
+}
+
 .page-footer__logo {
   margin-top: 12px;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    width: 768px;
+    padding: 0;
+  }
+
+  .page-footer__logo-mishka {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__bottom {
+    margin: 0;
+  }
 }

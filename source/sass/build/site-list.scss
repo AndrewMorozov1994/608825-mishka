@@ -14,7 +14,7 @@
 }
 
 .site-list__item {
-  padding-left: 45px;
+  padding-right: 45px;
 }
 
 @media (min-width: 768px) {
@@ -26,6 +26,7 @@
     display: flex;
     margin-left: 0;
     min-width: 668px;
+    font-size: 15px;
 
     .site-list__item:nth-child(4) {
       display: none;
@@ -33,12 +34,18 @@
 
     &:last-child {
       justify-content: flex-end;
+      font-size: 17px;
+
+      .site-list__item {
+        padding-right: 0;
+      }
     }
   }
 }
 
 @media (min-width: 1200px) {
   .site-list {
+    margin: 0;
     display: flex;
     width: 400px;
     flex-wrap: wrap;

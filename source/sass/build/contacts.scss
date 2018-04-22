@@ -37,3 +37,31 @@
   width: 320px;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .contacts {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__item:not(:nth-child(1)) {
+    margin-left: 20px;
+
+    &:nth-child(4) {
+      width: 235px;
+    }
+  }
+
+  .contacts__image-map {
+    width: 768px;
+  }
+
+  .contacts__send-us {
+    margin: 0 auto;
+  }
+}

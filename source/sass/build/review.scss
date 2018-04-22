@@ -22,3 +22,57 @@
   width: 260px;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .review {
+    width: 668px;
+    padding: 0 50px;
+    position: relative;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 350px;
+      min-height: 457px;
+      background-image: url("../../img/review@1x.jpg");
+      background-color: #f3f3f3;
+    }
+  }
+
+  .review__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .review__user-review {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .review__user-name {
+    font-size: 18px;
+  }
+
+  .review__user-contact {
+    line-height: 30px;
+  }
+
+  .review__user-and-buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .review__buttons-wrapper {
+    margin-top: 40px;
+  }
+
+  .review__send {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+}

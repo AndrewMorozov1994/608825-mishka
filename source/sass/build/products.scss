@@ -2,3 +2,15 @@
   margin: 0 auto;
   width: 320px;
 }
+
+@media (min-width: 768px) {
+  .products {
+    width: 768px;
+  }
+}
+
+@media (width: 1200px) {
+  .products {
+    width: 1200px;
+  }
+}

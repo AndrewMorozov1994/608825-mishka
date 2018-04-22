@@ -1,3 +1,7 @@
+.products-title {
+  width: 320px;
+}
+
 .products-title__title {
   font-size: 27px;
   font-weight: 700;
@@ -25,7 +29,6 @@
 
 .products-title__list-item {
   a {
-    width: 320px;
     font-size: 19px;
     color: white;
     background-color: #63d1bb;
@@ -44,8 +47,37 @@
 }
 
 @media (min-width: 768px) {
-  .page-main {
+  .products-title {
     width: 768px;
     margin: 0 auto;
+  }
+
+  .products-title__title {
+    width: 525px;
+    font-size: 43px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 120px;
+  }
+
+  .products-title__title-wrapper {
+    min-height: 627px;
+    background-size: cover;
+  }
+
+  .products-title__list-container {
+    display: flex;
+    justify-content: space-between;
+    margin: -65px 50px 0 50px;
+  }
+
+  .products-title__list-item {
+    flex-grow: 1;
+
+    a {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
