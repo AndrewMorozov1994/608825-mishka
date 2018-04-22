@@ -8,6 +8,7 @@
 .products-title__title-wrapper {
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-position: top center;
+  background-color: #f1f1f1;
   min-height: 285px;
 }
 
@@ -40,4 +41,11 @@
 
 .products-title__link:nth-last-child(2) {
   background-color: red;
+}
+
+@media (min-width: 768px) {
+  .page-main {
+    width: 768px;
+    margin: 0 auto;
+  }
 }
