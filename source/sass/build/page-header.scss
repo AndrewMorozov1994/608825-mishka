@@ -9,6 +9,7 @@
   display: block;
   margin: 0 auto;
   width: 86px;
+  text-align: center;
 }
 
 .page-header__open-button {
@@ -37,6 +38,7 @@
 
   .page-header__logo-image {
     margin-left: 10px;
+    width: 113px;
   }
 
   .page-header__delivery {
@@ -67,6 +69,8 @@
   }
 
   .page-header__logo-image {
+    display: block;
     margin: 0 auto;
+    width: 149px;
   }
 }
