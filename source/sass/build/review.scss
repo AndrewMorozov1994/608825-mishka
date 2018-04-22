@@ -71,8 +71,40 @@
   }
 
   .review__send {
+    line-height: 20px;
     position: absolute;
     top: 20px;
     right: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  .review {
+    width: 1050px;
+    padding: 0 100px;
+
+    &::before {
+      left: 100px;
+    }
+  }
+
+  .review__title {
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .review__user-review {
+    margin-left: 175px;
+    width: 770px;
+  }
+
+  .review__user-and-buttons-wrapper {
+    margin-left: 175px;
+    width: 875px;
+  }
+
+  .review__send {
+    right: 60px;
   }
 }

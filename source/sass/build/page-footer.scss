@@ -54,3 +54,13 @@
     margin: 0;
   }
 }
+
+@media (min-width: 1250px) {
+  .page-footer {
+    width: 1250px;
+  }
+
+  .page-footer__wrapper {
+    width: 1050px;
+  }
+}

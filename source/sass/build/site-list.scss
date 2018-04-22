@@ -43,7 +43,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .site-list {
     margin: 0;
     display: flex;
@@ -52,13 +52,16 @@
 
     .site-list__item {
       width: 195px;
+      font-size: 17px;
 
       &:nth-child(3) {
         display: block;
+        font-size: 15px;
       }
 
       &:nth-child(4) {
         display: block;
+        font-size: 15px;
       }
     }
   }

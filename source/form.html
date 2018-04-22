@@ -9,21 +9,36 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo-image" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
-      <button class="page-header__open-button" type="button">Открыть меню</button>
-      <ul class="site-list">
-        <li class="site-list__item">
-          <a href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Вязание на заказ</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Поиск по сайту</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
+      <button class="page-header__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="page-header__site-list-wrapper">
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+        <div class="page-header__crate-and-search">
+          <ul class="site-list">
+            <li class="site-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-header__delivery">
+        <a href="#">Бесплатная доставка по России</a>
+      </div>
     </header>
     <main class="page-main">
       <div class="page-main__title-wrapper">
@@ -99,21 +114,26 @@
       </form>
     </main>
     <footer class="page-footer">
-      <ul class="page-footer__list">
-        <li class="page-footer__item page-footer__item--inst">
-          <a href="#">Инстаграм</a>
-        </li>
-        <li class="page-footer__item page-footer__item--fb">
-          <a href="#">Фейсбук</a>
-        </li>
-        <li class="page-footer__item page-footer__item--tw">
-          <a href="#">Твиттер</a>
-        </li>
-      </ul>
-      <p class="page-footer__studio">Разработано</p>
-      <a href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="page-footer__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HtmlAcademyLogo">
-      </a>
+      <div class="page-footer__wrapper">
+        <img class="page-footer__logo-mishka" src="img/logo-mobile.svg" alt="Логотип Мишка" width="86" height="35">
+        <ul class="page-footer__list">
+          <li class="page-footer__item page-footer__item--inst">
+            <a href="#">Инстаграм</a>
+          </li>
+          <li class="page-footer__item page-footer__item--fb">
+            <a href="#">Фейсбук</a>
+          </li>
+          <li class="page-footer__item page-footer__item--tw">
+            <a href="#">Твиттер</a>
+          </li>
+        </ul>
+        <div class="page-footer__bottom">
+          <p class="page-footer__studio">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="page-footer__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HtmlAcademyLogo">
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

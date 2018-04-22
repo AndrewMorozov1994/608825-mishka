@@ -91,9 +91,7 @@
 
   .products-item__item-of-week {
     margin: 0 0 6px 0;
-    font-size: 17px;
     line-height: 17px;
-    text-transform: uppercase;
     width: 110px;
     text-align: center;
   }
@@ -108,5 +106,45 @@
     display: flex;
     flex-direction: column;
     width: 292px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .products-item {
+    padding: 0 100px;
+  }
+
+  .products-item__title-wrapper {
+    position: relative;
+    z-index: 2;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: 60px;
+    margin-top: 130px;
+  }
+
+  .products-item__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .products-item__item-of-week {
+    line-height: 17px;
+  }
+
+  .products-item__item-wrapper {
+    width: 875px;
+    margin-left: auto;
+    margin-top: -100px;
+    align-items: flex-end;
+  }
+
+  .products-item__image {
+    width: 525px;
+    min-height: 636px;
+  }
+
+  .products-item__des-and-feat-wrapper {
+    margin-bottom: 220px;
   }
 }
