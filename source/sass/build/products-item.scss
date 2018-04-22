@@ -1,6 +1,7 @@
 .products-item {
   font-size: 15px;
   font-weight: 400;
+  padding: 0 30px;
 }
 
 .products-item__title {
@@ -17,10 +18,6 @@
   font-weight: 700;
 }
 
-.products-item__description {
-  width: 260px;
-}
-
 .products-item__price {
   color: #444444;
   font-size: 17px;
@@ -33,4 +30,8 @@
 
 .products-item__link {
   font-size: 17px;
+}
+
+.products-item__buy {
+  text-align: center;
 }

@@ -1,12 +1,21 @@
+.about-us {
+  width: 260px;
+  margin: 0 auto;
+  text-align: start;
+}
+
 .about-us__title {
   font-size: 25px;
   font-weight: 700;
 }
 
 .about-us__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .about-us__item {
   line-height: 20px;
+  margin-top: 90px;
 }

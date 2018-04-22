@@ -1,0 +1,28 @@
+.modal {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modal__title {
+  width: 170px;
+  margin: 0 auto;
+}
+
+.modal__form {
+  display: flex;
+  width: 260px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  label {
+    width: 82px;
+  }
+}
+
+.modal__button {
+  margin: 0 auto;
+  background-color: #63d1bb;
+  color: white;
+}
