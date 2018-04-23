@@ -32,8 +32,20 @@
   }
 }
 
+@media (min-width: 1150px) {
+  .page-main--catalog {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
+  .page-main__title-wrapper {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
 @media (min-width: 1250px) {
-  .page-main {
+  .page-main--index {
     width: 1250px;
     margin: 0 auto;
   }

@@ -51,3 +51,28 @@
     order: 3;
   }
 }
+
+@media (min-width: 1150px) {
+  .making {
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .making__title {
+    width: 220px;
+    padding-left: 40px;
+  }
+
+  .making__description {
+    margin-left: auto;
+    width: 288px;
+    margin-top: -350px;
+  }
+
+  .making__button {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+  }
+}

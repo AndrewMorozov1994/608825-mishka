@@ -56,11 +56,17 @@
 }
 
 @media (min-width: 1250px) {
-  .page-footer {
+  .page-footer--index {
     width: 1250px;
   }
+}
 
-  .page-footer__wrapper {
-    width: 1050px;
+@media (min-width: 1150px) {
+  .page-footer {
+    width: 1150px;
+
+    .page-footer__wrapper {
+      width: 1050px;
+    }
   }
 }
