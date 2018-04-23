@@ -1,6 +1,14 @@
 .page-main {
   margin: 0 auto;
-  width: auto;
+  width: 320px;
+}
+
+.page-main__description {
+  font-size: 13px;
+  font-weight: 400;
+  color: #444444;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .page-main__title-wrapper {
@@ -22,6 +30,13 @@
     margin: 0 auto;
   }
 
+  .page-main__description {
+    width: 620px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-left: 50px;
+  }
+
   .page-main__title-wrapper {
     min-height: 225px;
   }
@@ -33,14 +48,26 @@
 }
 
 @media (min-width: 1150px) {
-  .page-main--catalog {
-    width: 1150px;
-    margin: 0 auto;
+  .page-main {
+    &--catalog {
+      width: 1150px;
+      margin: 0 auto;
+    }
+
+    &--form {
+      width: 1150px;
+      margin: 0 auto;
+    }
   }
 
-  .page-main__title-wrapper {
+  .page-main__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .page-main__description {
+    width: 700px;
+    margin: 0 auto;
   }
 }
 

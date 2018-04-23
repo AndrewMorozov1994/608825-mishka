@@ -73,6 +73,17 @@
       width: 149px;
     }
   }
+
+  .page-header--form {
+    width: 1050px;
+    margin: 0 auto;
+
+    .page-header__logo-image {
+      display: block;
+      margin: 0 auto;
+      width: 149px;
+    }
+  }
 }
 
 @media (min-width: 1250px) {

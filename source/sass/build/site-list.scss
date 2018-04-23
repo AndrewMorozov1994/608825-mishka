@@ -25,7 +25,7 @@
   .site-list {
     display: flex;
     margin-left: 0;
-    min-width: 668px;
+    width: 668px;
     font-size: 15px;
 
     .site-list__item:nth-child(4) {
@@ -47,11 +47,10 @@
   .site-list {
     margin: 0;
     display: flex;
-    width: 400px;
+    width: 500px;
     flex-wrap: wrap;
 
     .site-list__item {
-      width: 195px;
       font-size: 17px;
 
       &:nth-child(3) {
@@ -71,11 +70,10 @@
   .site-list--catalog {
     margin: 0;
     display: flex;
-    width: 400px;
+    width: 500px;
     flex-wrap: wrap;
 
     .site-list__item {
-      width: 195px;
       font-size: 17px;
 
       &:nth-child(3) {
