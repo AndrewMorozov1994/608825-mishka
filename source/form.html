@@ -1,118 +1,153 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo-image" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
-      <button class="page-header__open-button" type="button">Открыть меню</button>
-      <ul class="site-list">
-        <li class="site-list__item">
-          <a href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Вязание на заказ</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Поиск по сайту</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </header>
-    <main class="page-main">
+  <header class="page-header page-header--within">
+    <a class="page-header__logo-image" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
+    <button class="page-header__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <ul class="site-list site-list--within">
+      <li class="site-list__item">
+        <a href="catalog.html">Каталог товаров</a>
+      </li>
+      <li class="site-list__item">
+        <a href="#">Вязание на заказ</a>
+      </li>
+      <li class="site-list__item">
+        <a href="#">Новые поступления</a>
+      </li>
+      <li class="site-list__item">
+        <a href="#">Распродажа</a>
+      </li>
+    </ul>
+    <ul class="site-list site-list--within">
+      <li class="site-list__item">
+        <a href="#">Поиск по сайту</a>
+      </li>
+      <li class="site-list__item">
+        <a href="#">Корзина: пока пуста</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__delivery" href="#">Бесплатная доставка по России</a>
+      </li>
+    </ul>
+  </header>
+    <main class="page-main page-main--form">
       <div class="page-main__title-wrapper">
         <h1 class="page-main__title">Вязание на заказ</h1>
       </div>
+      <div class="container">
       <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="main-form" action="#" method="post">
         <section class="main-form__section main-form__section--radio">
           <p class="main-form__description">Тип</p>
-          <label class="main-form__item">
-            <input type="radio" name="form-radio">Аксессуар для интерьера
-          </label>
-          <label class="main-form__item">
-            <input type="radio" name="form-radio">Детская игрушка
-          </label>
+          <div class="main-form__item-wrapper main-form__item-wrapper--radio">
+            <label class="main-form__item">
+              <input type="radio" name="form-radio">Аксессуар для интерьера
+            </label>
+            <label class="main-form__item">
+              <input type="radio" name="form-radio">Детская игрушка
+            </label>
+          </div>
         </section>
         <section class="main-form__section main-form__section--check">
           <p class="main-form__description">Цвет</p>
-          <label class="main-form__item">
-            <input type="checkbox">Белый
-          </label>
-          <label class="main-form__item">
-            <input type="checkbox">Серый
-          </label>
-          <label class="main-form__item">
-            <input type="checkbox">Тиффани
-          </label>
-          <label class="main-form__item">
-            <input type="checkbox">Черный
-          </label>
-          <label class="main-form__item">
-            <input type="checkbox">Розовый
-          </label>
-          <label class="main-form__item">
-            <input type="checkbox">Оранжевый
-          </label>
+          <div class="main-form__item-wrapper main-form__item-wrapper--check">
+            <label class="main-form__item">
+              <input type="checkbox">Белый
+            </label>
+            <label class="main-form__item">
+              <input type="checkbox">Серый
+            </label>
+            <label class="main-form__item">
+              <input type="checkbox">Тиффани
+            </label>
+            <label class="main-form__item">
+              <input type="checkbox">Черный
+            </label>
+            <label class="main-form__item">
+              <input type="checkbox">Розовый
+            </label>
+            <label class="main-form__item">
+              <input type="checkbox">Оранжевый
+            </label>
+          </div>
         </section>
         <section class="main-form__section main-form__section--users-info">
           <p class="main-form__description">ФИО</p>
-          <label class="main-form__user-name">
-            Имя:
-            <input type="text" placeholder="Введите ваше имя*">
-          </label>
-          <label class="main-form__user-surname">
-            Фамилия:
-            <input type="text" placeholder="Укажите фамилию*">
-          </label>
-          <label class="main-form__user-patronymic">
-            Отчество:
-            <input type="text" placeholder="Отчество, если желаете*">
-          </label>
+          <div class="main-form__item-wrapper">
+            <label class="main-form__user-name">
+              Имя:
+              <input type="text" placeholder="Введите ваше имя*">
+            </label>
+            <label class="main-form__user-surname">
+              Фамилия:
+              <input type="text" placeholder="Укажите фамилию*">
+            </label>
+            <label class="main-form__user-patronymic">
+              Отчество:
+              <input type="text" placeholder="Отчество, если желаете*">
+            </label>
+          </div>
         </section>
         <section class="main-form__section main-form__section--phone">
           <label class="main-form__user-phone">
             <p class="main-form__description">Тел</p>
-            <input type="tel" placeholder="+7 XXX XX XX*">
           </label>
+          <div class="main-form__item-wrapper">
+            <input type="tel" placeholder="+7 XXX XX XX*">
+          </div>
         </section>
         <section class="main-form__section main-form__section--email">
-          <label class="main-form__user-email">
+          <label for="email" class="main-form__user-email">
             <p class="main-form__description">e-mail</p>
-            <input type="email" placeholder="Ваш Email*">
           </label>
+          <div class="main-form__item-wrapper">
+            <input type="email" id="email" placeholder="Ваш Email*">
+          </div>
         </section>
         <section class="main-form__section main-form__section--wishes">
           <label class="main-form__user-wishes">
             <p class="main-form__description">Доп</p>
-            <textarea cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
+          <div class="main-form__item-wrapper">
+            <textarea cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
         </section>
-        <small class="main-form__legend"><sup>*</sup>Поля обязательные для заполнения</small>
-        <button type="submit" class="button-link main-form__send">Отправить заказ</button>
+        <div class="main-form__bottom">
+          <small class="main-form__legend"><sup>*</sup>Поля обязательные для заполнения</small>
+          <button type="submit" class="button-link main-form__send">Отправить заказ</button>
+        </div>
       </form>
+      </div>
     </main>
-    <footer class="page-footer">
-      <ul class="page-footer__list">
-        <li class="page-footer__item page-footer__item--inst">
-          <a href="#">Инстаграм</a>
-        </li>
-        <li class="page-footer__item page-footer__item--fb">
-          <a href="#">Фейсбук</a>
-        </li>
-        <li class="page-footer__item page-footer__item--tw">
-          <a href="#">Твиттер</a>
-        </li>
-      </ul>
-      <p class="page-footer__studio">Разработано</p>
-      <a href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="page-footer__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HtmlAcademyLogo">
-      </a>
+    <footer class="page-footer page-footer--within">
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <img class="page-footer__logo-mishka" src="img/logo-mobile.svg" alt="Логотип Мишка" width="86" height="35">
+          <ul class="page-footer__list">
+            <li class="page-footer__item page-footer__item--inst">
+              <a href="#">Инстаграм</a>
+            </li>
+            <li class="page-footer__item page-footer__item--fb">
+              <a href="#">Фейсбук</a>
+            </li>
+            <li class="page-footer__item page-footer__item--tw">
+              <a href="#">Твиттер</a>
+            </li>
+          </ul>
+          <div class="page-footer__bottom">
+            <p class="page-footer__studio">Разработано</p>
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="page-footer__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HtmlAcademyLogo">
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

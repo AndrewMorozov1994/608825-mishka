@@ -1,4 +1,17 @@
+.making {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.making__title {
+  width: 170px;
+  margin-left: auto;
+}
+
 .making__description {
+  margin-left: 35px;
+  width: 200px;
   font-size: 13px;
   font-weight: 400;
 }
@@ -6,4 +19,60 @@
 .making__button {
   font-size: 17px;
   line-height: 16px;
+}
+
+@media (min-width: 768px) {
+  .making {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .making__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .making__video {
+    width: 668px;
+    min-height: 455px;
+  }
+
+  .making__title {
+    font-size: 20px;
+    width: 250px;
+    margin-left: 50px;
+    order: 2;
+  }
+
+  .making__description {
+    width: 586px;
+    font-size: 15px;
+    line-height: 30px;
+    order: 3;
+  }
+}
+
+@media (min-width: 1150px) {
+  .making {
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .making__title {
+    width: 220px;
+    padding-left: 40px;
+  }
+
+  .making__description {
+    margin-left: auto;
+    width: 288px;
+    margin-top: -350px;
+  }
+
+  .making__button {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+  }
 }

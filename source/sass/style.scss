@@ -1,4 +1,7 @@
 @import "global.scss";
+@import "build/visually-hidden.scss";
+@import "build/page-header.scss";
+@import "build/products.scss";
 @import "build/about-us.scss";
 @import "build/contacts.scss";
 @import "build/page-footer.scss";
@@ -11,3 +14,6 @@
 @import "build/catalog.scss";
 @import "build/making.scss";
 @import "build/main-form.scss";
+@import "build/modal.scss";
+@import "build/container.scss";
+
