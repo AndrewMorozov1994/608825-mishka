@@ -1,6 +1,6 @@
 .page-main {
   margin: 0 auto;
-  width: 320px;
+  width: auto;
 }
 
 .page-main__description {
@@ -9,6 +9,7 @@
   color: #444444;
   width: 260px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .page-main__title-wrapper {
@@ -22,11 +23,12 @@
 .page-main__title {
   font-size: 27px;
   line-height: 30px;
+  padding: 0 30px;
 }
 
 @media (min-width: 768px) {
   .page-main {
-    width: 768px;
+    width: auto;
     margin: 0 auto;
   }
 
@@ -34,7 +36,8 @@
     width: 620px;
     font-size: 17px;
     line-height: 30px;
-    margin-left: 50px;
+    padding: 0 50px;
+    margin: 0 auto;
   }
 
   .page-main__title-wrapper {
@@ -50,12 +53,12 @@
 @media (min-width: 1150px) {
   .page-main {
     &--catalog {
-      width: 1150px;
+      width: auto;
       margin: 0 auto;
     }
 
     &--form {
-      width: 1150px;
+      width: auto;
       margin: 0 auto;
     }
   }

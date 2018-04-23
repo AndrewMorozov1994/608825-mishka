@@ -1,5 +1,5 @@
 .page-footer {
-  width: 260px;
+  width: auto;
   margin: 0 auto;
   padding: 0 30px;
   background-color: #f1f1f1;
@@ -35,7 +35,6 @@
 
 @media (min-width: 768px) {
   .page-footer {
-    width: 768px;
     padding: 0;
   }
 
@@ -57,14 +56,14 @@
 
 @media (min-width: 1250px) {
   .page-footer--index {
-    width: 1250px;
+    .page-footer__wrapper {
+      width: 1050px;
+    }
   }
 }
 
 @media (min-width: 1150px) {
-  .page-footer {
-    width: 1150px;
-
+  .page-footer--within {
     .page-footer__wrapper {
       width: 1050px;
     }

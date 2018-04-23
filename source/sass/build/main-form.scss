@@ -1,6 +1,7 @@
 .main-form {
   width: 260px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .main-form__description {
@@ -26,6 +27,11 @@
   line-height: 16px;
   font-weight: 400;
   color: #444444;
+}
+
+.main-form__item-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-form__send {
