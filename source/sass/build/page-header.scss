@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.page-header__open-button {
+.page-header__button {
   position: absolute;
   right: 20px;
   top: 10px;
@@ -30,7 +30,7 @@
     flex-direction: column;
   }
 
-  .page-header__open-button {
+  .page-header__button {
     display: none;
   }
 

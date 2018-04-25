@@ -17,6 +17,24 @@
   padding-right: 45px;
 }
 
+@media (max-width: 767px) {
+  .site-list {
+    &--closed {
+      display: none;
+    }
+
+    &--opened {
+      display: block;
+      position: absolute;
+      background-color: #ffffff;
+
+      &:last-child {
+        top: 100px;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .site-list__item {
     min-width: 168px;
