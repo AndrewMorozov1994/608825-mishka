@@ -8,8 +8,10 @@
   </head>
   <body>
     <header class="page-header page-header--index">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-      <button class="page-header__button page-header__button--active" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="page-header__logo-container">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+        <button class="page-header__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
       <ul class="site-list site-list--index">
         <li class="site-list__item">
           <div class="site-list__container">
@@ -35,12 +37,12 @@
       <ul class="site-list site-list--index">
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="#">Поиск по сайту</a>
+            <a class="site-list__link site-list__link--search" href="#"><span>Поиск по сайту</span></a>
           </div>
         </li>
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="site-list__link site-list__link--crate" href="#">Корзина: пока пуста</a>
           </div>
         </li>
         <li class="site-list__item">
@@ -193,5 +195,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

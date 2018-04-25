@@ -30,6 +30,11 @@
   .page-main {
     width: auto;
     margin: 0 auto;
+
+    &--index {
+      margin-top: -75px;
+      border-top: 1px solid grey;
+    }
   }
 
   .page-main__description {
@@ -78,5 +83,6 @@
   .page-main--index {
     width: 1250px;
     margin: 0 auto;
+    margin-top: -75px;
   }
 }
