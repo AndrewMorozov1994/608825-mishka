@@ -35,6 +35,11 @@
       margin-top: -75px;
       border-top: 1px solid grey;
     }
+
+    &--within {
+      margin-top: -75px;
+      border-top: 1px solid grey;
+    }
   }
 
   .page-main__description {
@@ -57,14 +62,10 @@
 
 @media (min-width: 1150px) {
   .page-main {
-    &--catalog {
+    &--within {
       width: auto;
       margin: 0 auto;
-    }
-
-    &--form {
-      width: auto;
-      margin: 0 auto;
+      margin-top: -75px;
     }
   }
 

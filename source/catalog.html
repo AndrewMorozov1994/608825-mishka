@@ -8,12 +8,14 @@
   </head>
   <body>
     <header class="page-header page-header--within">
-      <a class="page-header__logo-image" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
-      <button class="page-header__button page-header__button--active" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="page-header__logo-container">
+        <a class="page-header__logo-image" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
+        <button class="page-header__button page-header__button--active" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
       <ul class="site-list site-list--within">
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="catalog.html">Каталог товаров</a>
+            <a href="#">Каталог товаров</a>
           </div>
         </li>
         <li class="site-list__item">
@@ -32,15 +34,15 @@
           </div>
         </li>
       </ul>
-      <ul class="site-list site-list--index">
+      <ul class="site-list site-list--within">
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="#">Поиск по сайту</a>
+            <a class="site-list__link site-list__link--search" href="#"><span>Поиск по сайту</span></a>
           </div>
         </li>
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="site-list__link site-list__link--crate" href="#">Корзина: пока пуста</a>
           </div>
         </li>
         <li class="site-list__item">
@@ -50,7 +52,7 @@
         </li>
       </ul>
     </header>
-    <main class="page-main page-main--catalog">
+    <main class="page-main page-main--within">
       <div class="page-main__title-wrapper">
         <h1 class="page-main__title">Каталог товаров</h1>
       </div>
@@ -131,5 +133,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
