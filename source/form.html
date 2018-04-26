@@ -7,122 +7,138 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <header class="page-header page-header--within">
-    <a class="page-header__logo-image" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
-    <button class="page-header__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <ul class="site-list site-list--within">
-      <li class="site-list__item">
-        <a href="catalog.html">Каталог товаров</a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">Вязание на заказ</a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">Новые поступления</a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">Распродажа</a>
-      </li>
-    </ul>
-    <ul class="site-list site-list--within">
-      <li class="site-list__item">
-        <a href="#">Поиск по сайту</a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">Корзина: пока пуста</a>
-      </li>
-      <li class="site-list__item">
-        <a class="site-list__delivery" href="#">Бесплатная доставка по России</a>
-      </li>
-    </ul>
-  </header>
-    <main class="page-main page-main--form">
+    <header class="page-header page-header--within">
+      <div class="page-header__logo-container">
+        <a class="page-header__logo-image" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка"></a>
+        <button class="page-header__button page-header__button--active" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+      <ul class="site-list site-list--within">
+        <li class="site-list__item">
+          <div class="site-list__container">
+            <a href="catalog.html">Каталог товаров</a>
+          </div>
+        </li>
+        <li class="site-list__item">
+          <div class="site-list__container">
+            <a href="#">Вязание на заказ</a>
+          </div>
+        </li>
+        <li class="site-list__item">
+          <div class="site-list__container">
+            <a href="#">Новые поступления</a>
+          </div>
+        </li>
+        <li class="site-list__item">
+          <div class="site-list__container">
+            <a href="#">Распродажа</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="site-list site-list--within">
+        <li class="site-list__item">
+          <div class="site-list__container">
+            <a class="site-list__link site-list__link--search" href="#"><span>Поиск по сайту</span></a>
+          </div>
+        </li>
+        <li class="site-list__item">
+          <div class="site-list__container">
+            <a class="site-list__link site-list__link--crate" href="#">Корзина: пока пуста</a>
+          </div>
+        </li>
+        <li class="site-list__item">
+          <div class="site-list__container">
+            <a class="site-list__delivery" href="#">Бесплатная доставка по России</a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <main class="page-main page-main--within">
       <div class="page-main__title-wrapper">
         <h1 class="page-main__title">Вязание на заказ</h1>
       </div>
       <div class="container">
-      <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="main-form" action="#" method="post">
-        <section class="main-form__section main-form__section--radio">
-          <p class="main-form__description">Тип</p>
-          <div class="main-form__item-wrapper main-form__item-wrapper--radio">
-            <label class="main-form__item">
-              <input type="radio" name="form-radio">Аксессуар для интерьера
+        <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="main-form" action="#" method="post">
+          <section class="main-form__section main-form__section--radio">
+            <p class="main-form__description">Тип</p>
+            <div class="main-form__item-wrapper main-form__item-wrapper--radio">
+              <label class="main-form__item">
+                <input type="radio" name="form-radio">Аксессуар для интерьера
+              </label>
+              <label class="main-form__item">
+                <input type="radio" name="form-radio">Детская игрушка
+              </label>
+            </div>
+          </section>
+          <section class="main-form__section main-form__section--check">
+            <p class="main-form__description">Цвет</p>
+            <div class="main-form__item-wrapper main-form__item-wrapper--check">
+              <label class="main-form__item">
+                <input type="checkbox">Белый
+              </label>
+              <label class="main-form__item">
+                <input type="checkbox">Серый
+              </label>
+              <label class="main-form__item">
+                <input type="checkbox">Тиффани
+              </label>
+              <label class="main-form__item">
+                <input type="checkbox">Черный
+              </label>
+              <label class="main-form__item">
+                <input type="checkbox">Розовый
+              </label>
+              <label class="main-form__item">
+                <input type="checkbox">Оранжевый
+              </label>
+            </div>
+          </section>
+          <section class="main-form__section main-form__section--users-info">
+            <p class="main-form__description">ФИО</p>
+            <div class="main-form__item-wrapper">
+              <label class="main-form__user-name">
+                Имя:
+                <input type="text" placeholder="Введите ваше имя*">
+              </label>
+              <label class="main-form__user-surname">
+                Фамилия:
+                <input type="text" placeholder="Укажите фамилию*">
+              </label>
+              <label class="main-form__user-patronymic">
+                Отчество:
+                <input type="text" placeholder="Отчество, если желаете*">
+              </label>
+            </div>
+          </section>
+          <section class="main-form__section main-form__section--phone">
+            <label class="main-form__user-phone">
+              <span class="main-form__description">Тел</span>
             </label>
-            <label class="main-form__item">
-              <input type="radio" name="form-radio">Детская игрушка
+            <div class="main-form__item-wrapper">
+              <input type="tel" placeholder="+7 XXX XX XX*">
+            </div>
+          </section>
+          <section class="main-form__section main-form__section--email">
+            <label for="email" class="main-form__user-email">
+              <span class="main-form__description">e-mail</span>
             </label>
+            <div class="main-form__item-wrapper">
+              <input type="email" id="email" placeholder="Ваш Email*">
+            </div>
+          </section>
+          <section class="main-form__section main-form__section--wishes">
+            <label class="main-form__user-wishes">
+              <span class="main-form__description">Доп</span>
+            </label>
+            <div class="main-form__item-wrapper">
+              <textarea cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </section>
+          <div class="main-form__bottom">
+            <small class="main-form__legend"><sup>*</sup>Поля обязательные для заполнения</small>
+            <button type="submit" class="button-link main-form__send">Отправить заказ</button>
           </div>
-        </section>
-        <section class="main-form__section main-form__section--check">
-          <p class="main-form__description">Цвет</p>
-          <div class="main-form__item-wrapper main-form__item-wrapper--check">
-            <label class="main-form__item">
-              <input type="checkbox">Белый
-            </label>
-            <label class="main-form__item">
-              <input type="checkbox">Серый
-            </label>
-            <label class="main-form__item">
-              <input type="checkbox">Тиффани
-            </label>
-            <label class="main-form__item">
-              <input type="checkbox">Черный
-            </label>
-            <label class="main-form__item">
-              <input type="checkbox">Розовый
-            </label>
-            <label class="main-form__item">
-              <input type="checkbox">Оранжевый
-            </label>
-          </div>
-        </section>
-        <section class="main-form__section main-form__section--users-info">
-          <p class="main-form__description">ФИО</p>
-          <div class="main-form__item-wrapper">
-            <label class="main-form__user-name">
-              Имя:
-              <input type="text" placeholder="Введите ваше имя*">
-            </label>
-            <label class="main-form__user-surname">
-              Фамилия:
-              <input type="text" placeholder="Укажите фамилию*">
-            </label>
-            <label class="main-form__user-patronymic">
-              Отчество:
-              <input type="text" placeholder="Отчество, если желаете*">
-            </label>
-          </div>
-        </section>
-        <section class="main-form__section main-form__section--phone">
-          <label class="main-form__user-phone">
-            <p class="main-form__description">Тел</p>
-          </label>
-          <div class="main-form__item-wrapper">
-            <input type="tel" placeholder="+7 XXX XX XX*">
-          </div>
-        </section>
-        <section class="main-form__section main-form__section--email">
-          <label for="email" class="main-form__user-email">
-            <p class="main-form__description">e-mail</p>
-          </label>
-          <div class="main-form__item-wrapper">
-            <input type="email" id="email" placeholder="Ваш Email*">
-          </div>
-        </section>
-        <section class="main-form__section main-form__section--wishes">
-          <label class="main-form__user-wishes">
-            <p class="main-form__description">Доп</p>
-          </label>
-          <div class="main-form__item-wrapper">
-            <textarea cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </div>
-        </section>
-        <div class="main-form__bottom">
-          <small class="main-form__legend"><sup>*</sup>Поля обязательные для заполнения</small>
-          <button type="submit" class="button-link main-form__send">Отправить заказ</button>
-        </div>
-      </form>
+        </form>
       </div>
     </main>
     <footer class="page-footer page-footer--within">
@@ -149,5 +165,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
