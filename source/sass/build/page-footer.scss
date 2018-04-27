@@ -36,7 +36,8 @@
 @media (min-width: 768px) {
   .page-footer {
     padding: 0;
-    width: 768px;
+    margin: 0;
+    width: calc(100%);
   }
 
   .page-footer__logo-mishka {
