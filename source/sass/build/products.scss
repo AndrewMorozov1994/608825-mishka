@@ -1,16 +1,15 @@
 .products {
-  margin: 0 auto;
-  width: 320px;
+  width: auto;
 }
 
 @media (min-width: 768px) {
   .products {
-    width: 768px;
+    width: auto;
   }
 }
 
 @media (min-width: 1250px) {
   .products {
-    width: 1250px;
+    width: auto;
   }
 }
