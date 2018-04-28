@@ -1,7 +1,8 @@
 .products-item {
   font-size: 15px;
   font-weight: 400;
-  padding: 0 30px;
+  width: calc(81.25%);
+  padding: 0 calc(9.375%);
 }
 
 .products-item__title {
@@ -50,7 +51,9 @@
 
 @media (min-width: 768px) {
   .products-item {
-    padding: 0 50px;
+    width: calc(87%);
+    margin: 0 calc(6.5%);
+    padding: 0;
   }
 
   .products-item__title {
