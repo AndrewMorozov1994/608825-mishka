@@ -68,9 +68,11 @@
     fill: rgba(20, 144, 128, 0.5);
   }
 
-  &--toys a {
-    background-color: #56c3b2;
-    padding: 21px calc(9.3%);
+  &--toys {
+    a {
+      background-color: #56c3b2;
+      padding: 21px calc(9.3%);
+    }
 
     svg {
       margin-right: 0;
@@ -81,6 +83,10 @@
 
 .products-title__link:nth-last-child(2) {
   background-color: red;
+}
+
+.products-title__zigzag {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -101,7 +107,7 @@
     background-color: #f9f9f9;
     background-image: url("../../img/hero-tablet@1x.jpg");
     background-position: top center;
-    min-height: 746px;
+    min-height: 745px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../../img/hero-tablet@2x.jpg");
@@ -113,7 +119,7 @@
     width: calc(87%);
     display: flex;
     justify-content: space-between;
-    margin: -95px calc(6.5%) 0 calc(6.5%);
+    margin: -118px calc(6.5%) 0 calc(6.5%);
   }
 
   .products-title__list-item {
@@ -123,6 +129,39 @@
       font-size: 20px;
       line-height: 30px;
     }
+
+    span {
+      margin-left: 4px;
+    }
+
+    &--interior {
+      a {
+        padding: 23px calc(9.3%) 23px calc(9.3%);
+      }
+
+      svg {
+        margin-top: 4px;
+        margin-right: 5px;
+      }
+    }
+
+    &--toys {
+      a {
+        padding: 23px calc(9.3%) 24px calc(9.3%);
+      }
+
+      svg {
+        padding-top: 8px;
+        margin-right: 3px;
+      }
+    }
+  }
+
+  .products-title__zigzag {
+    display: block;
+    margin-top: -10px;
+    height: 24px;
+    width: calc(100%);
   }
 }
 
