@@ -4,4 +4,7 @@
   font-weight: 700;
   display: block;
   text-align: center;
+  box-sizing: border-box;
+  border: 2px solid black;
+  width: calc(100%);
 }

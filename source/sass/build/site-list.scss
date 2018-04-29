@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  width: auto;
+  width: calc(100%);
 
   .site-list__item {
     &:nth-child(3) {
@@ -46,7 +46,6 @@
 }
 
 .site-list__container {
-  width: 260px;
   margin: 0 auto;
   padding-left: 45px;
 }
@@ -74,6 +73,7 @@
       display: block;
       position: absolute;
       background-color: #ffffff;
+      z-index: 3;
 
       &:last-child {
         top: 267px;

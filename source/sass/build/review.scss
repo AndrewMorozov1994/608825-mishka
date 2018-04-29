@@ -1,6 +1,6 @@
 .review {
   width: calc(81.25%);
-  margin: 0 auto;
+  margin: 57px auto 0 auto;
   padding: 0 calc(9.375%);
   min-width: 260px;
 }
@@ -13,15 +13,56 @@
 .review__user-review {
   font-size: 15px;
   font-weight: 400;
+  line-height: 30px;
+  margin-top: 27px;
 }
 
 .review__user-contact {
   font-weight: 400;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.review__user-and-buttons-wrapper {
+  margin-top: 27px;
+}
+
+.review__user-name {
+  margin: 0;
+}
+
+.review__buttons-wrapper {
+  margin-top: 33px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.review__button {
+  width: calc(100%);
+  background-color: #ffffff;
+  border: 1px solid grey;
+  min-height: 52px;
+  cursor: pointer;
+
+  &--prew {
+    border-right: none;
+  }
+
+  svg {
+    padding-top: 2px;
+    padding-right: 8px;
+  }
 }
 
 .review__send {
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 38px;
   width: 260px;
   text-align: center;
+  padding-top: 13px;
+  padding-bottom: 15px;
 }
 
 @media (min-width: 768px) {
