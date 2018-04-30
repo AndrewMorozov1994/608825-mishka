@@ -80,7 +80,7 @@
 
 @media (min-width: 1250px) {
   .page-main--index {
-    width: 1250px;
+    width: calc(100%);
     margin: 0 auto;
     margin-top: -75px;
   }

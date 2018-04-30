@@ -87,16 +87,36 @@
 
 @media (min-width: 1250px) {
   .page-footer--index {
+    margin-top: 105px;
+
     .page-footer__wrapper {
-      width: 1050px;
+      width: calc(84%);
+    }
+
+    .page-footer__bottom {
+      width: calc(18.1%);
+    }
+
+    .page-footer__list {
+      width: calc(14.3%);
     }
   }
 }
 
 @media (min-width: 1150px) {
   .page-footer--within {
+    margin-top: 105px;
+
     .page-footer__wrapper {
-      width: 1050px;
+      width: calc(91.3%);
+    }
+
+    .page-footer__bottom {
+      width: calc(18.1%);
+    }
+
+    .page-footer__list {
+      width: calc(14.3%);
     }
   }
 }

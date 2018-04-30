@@ -171,14 +171,13 @@
 }
 
 @media (min-width: 1250px) {
-  .products-title {
-    width: 1250px;
-  }
-
   .products-title__title-wrapper {
-    background-color: #f1f1f1;
     min-height: 745px;
-    background-size: contain;
+
+    &::before {
+      bottom: 155px;
+      background-size: cover;
+    }
   }
 
   .products-title__title {
@@ -188,12 +187,18 @@
   }
 
   .products-title__list-container {
-    margin: -65px 100px 0 100px;
+    margin: -120px auto 0 auto;
+    width: calc(84%);
+    box-sizing: border-box;
   }
 
   .products-title__list-item {
     a {
-      padding-right: 350px;
+      padding-left: calc(6.3%);
+    }
+
+    svg {
+      margin-right: -13px;
     }
   }
 }
