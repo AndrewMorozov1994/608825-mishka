@@ -49,32 +49,43 @@
 
 @media (min-width: 768px) {
   .making {
-    width: 668px;
-    margin: 0 auto;
+    width: calc(87%);
+    margin: -5px auto 0 auto;
   }
 
   .making__wrapper {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
   }
 
   .making__video {
     width: 668px;
     min-height: 455px;
+    margin: 0 auto;
   }
 
   .making__title {
     font-size: 20px;
     width: 250px;
-    margin-left: 50px;
+    margin-left: calc(15.7%);
+    margin-top: 40px;
     order: 2;
   }
 
   .making__description {
-    width: 586px;
+    width: calc(87.7%);
+    margin-top: 10px;
+    margin-left: calc(6%);
     font-size: 15px;
     line-height: 30px;
     order: 3;
+  }
+
+  .making__button {
+    width: calc(87.4%);
+    margin-top: 20px;
+    margin-bottom: 45px;
   }
 }
 

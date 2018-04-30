@@ -60,6 +60,10 @@
     padding: 0;
     margin-top: 58px;
     width: calc(100%);
+
+    &--within {
+      margin-top: 66px;
+    }
   }
 
   .page-footer__logo-mishka {
