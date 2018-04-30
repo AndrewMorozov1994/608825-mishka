@@ -75,29 +75,67 @@
 
 @media (min-width: 768px) {
   .contacts {
-    width: calc(87%);
-    padding: 0 calc(6.5%);
+    width: calc(100%);
+    margin-top: 191px;
   }
 
   .contacts__title {
+    position: relative;
     font-size: 43px;
     line-height: 50px;
-  }
+    width: calc(87%);
+    padding: 0 calc(6.5%);
+    margin-left: -5px;
 
-  .contacts__item {
-    margin-left: 20px;
-
-    &--address {
-      width: 235px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      right: calc(6.2%);
+      top: -14px;
+      background-image: url("../../img/icon-flag.svg");
+      background-repeat: no-repeat;
     }
   }
 
-  .contacts__image-map {
-    width: auto;
+  .contacts__list {
+    width: calc(87%);
+    padding: 0 calc(6.5%);
+    justify-content: space-between;
+    margin-top: 34px;
   }
 
-  .contacts__send-us {
-    margin: 0 auto;
+  .contacts__item {
+    width: calc(9%);
+    font-size: 17px;
+    line-height: 30px;
+
+    &--email {
+      width: calc(31.4%);
+      margin-left: 10px;
+    }
+
+    &--info-address {
+      margin-left: 48px;
+    }
+
+    &--address {
+      width: calc(33.7%);
+      margin-right: 32px;
+    }
+  }
+
+  .contacts__map {
+    margin-top: 40px;
+  }
+
+  .contacts__wrapper {
+    .contacts__send-us {
+      width: calc(30%);
+      margin-top: 53px;
+      font-size: 17px;
+    }
   }
 }
 

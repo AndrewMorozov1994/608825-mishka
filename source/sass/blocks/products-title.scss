@@ -113,6 +113,18 @@
       background-image: url("../../img/hero-tablet@2x.jpg");
       background-size: 2300px auto;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100%);
+      height: 24px;
+      bottom: 165px;
+      background-color: transparent;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
   }
 
   .products-title__list-container {
@@ -136,7 +148,7 @@
 
     &--interior {
       a {
-        padding: 23px calc(9.3%) 23px calc(9.3%);
+        padding: 23px calc(9.3%) 25px calc(9.3%);
       }
 
       svg {
@@ -147,7 +159,7 @@
 
     &--toys {
       a {
-        padding: 23px calc(9.3%) 24px calc(9.3%);
+        padding: 23px calc(9.3%) 26px calc(9.3%);
       }
 
       svg {
@@ -155,13 +167,6 @@
         margin-right: 3px;
       }
     }
-  }
-
-  .products-title__zigzag {
-    display: block;
-    margin-top: -10px;
-    height: 24px;
-    width: calc(100%);
   }
 }
 

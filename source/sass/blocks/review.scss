@@ -67,6 +67,7 @@
 
 @media (min-width: 768px) {
   .review {
+    margin-top: 87px;
     width: calc(87%);
     padding: 0 calc(6.5%);
     position: relative;
@@ -83,16 +84,28 @@
       background-image: url("../../img/review@1x.jpg");
       background-color: #f3f3f3;
     }
+
+    .review__send {
+      font-size: 17px;
+      line-height: 20px;
+      position: absolute;
+      top: 40px;
+      right: calc(6.5%);
+      width: calc(22.8%);
+    }
   }
 
   .review__title {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 77px;
+    margin-left: -5px;
   }
 
   .review__user-review {
     font-size: 17px;
     line-height: 30px;
+    margin-top: 48px;
   }
 
   .review__user-name {
@@ -106,17 +119,23 @@
   .review__user-and-buttons-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-top: 57px;
   }
 
   .review__buttons-wrapper {
-    margin-top: 40px;
+    margin-top: 0;
+    width: calc(25%);
+    flex-grow: 0;
   }
 
-  .review__send {
-    line-height: 20px;
-    position: absolute;
-    top: 20px;
-    right: 0;
+  .review__button {
+    border: none;
+
+    &--prew {
+      svg {
+        padding-right: 15px;
+      }
+    }
   }
 }
 
