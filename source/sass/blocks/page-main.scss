@@ -17,12 +17,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: -4px;
+  min-width: 320px;
 }
 
 .page-main__title {
   font-size: 27px;
   line-height: 30px;
-  padding: 0 30px;
+  padding-bottom: 5px;
 }
 
 @media (min-width: 768px) {

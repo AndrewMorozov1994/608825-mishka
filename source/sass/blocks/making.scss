@@ -1,24 +1,50 @@
 .making {
   width: 260px;
   margin: 0 auto;
-  padding: 0 30px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+.making__wrapper {
+  margin-top: 24px;
 }
 
 .making__title {
   width: 170px;
+  position: relative;
   margin-left: auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    top: 6px;
+    left: -55px;
+    background-image: url("../../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.making__video {
+  margin-top: 7px;
 }
 
 .making__description {
-  margin-left: 35px;
-  width: 200px;
+  margin-left: 33px;
+  margin-top: 22px;
+  width: 192px;
   font-size: 13px;
   font-weight: 400;
 }
 
 .making__button {
+  width: 192px;
+  margin: 24px auto 33px auto;
   font-size: 17px;
   line-height: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 @media (min-width: 768px) {

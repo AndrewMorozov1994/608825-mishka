@@ -2,6 +2,10 @@
   width: calc(100%);
   margin: 38px auto 0 auto;
   background-color: #f1f1f1;
+
+  &--within {
+    margin-top: 58px;
+  }
 }
 
 .page-footer__wrapper {
@@ -15,7 +19,7 @@
   padding-right: 10px;
   display: flex;
   justify-content: space-between;
-  width: calc(56%);
+  width: calc(45%);
   min-width: 140px;
 }
 
@@ -28,7 +32,7 @@
 .page-footer__bottom {
   display: flex;
   justify-content: space-between;
-  width: calc(100%);
+  width: calc(87%);
   box-sizing: border-box;
   padding: 9px calc(13.46%);
   margin: 15px auto 0 auto;
