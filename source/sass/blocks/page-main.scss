@@ -51,13 +51,13 @@
   }
 
   .page-main__title-wrapper {
-    min-height: 225px;
+    min-height: 224px;
   }
 
   .page-main__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 22px;
+    padding-top: 0;
   }
 }
 
@@ -66,13 +66,17 @@
     &--within {
       width: auto;
       margin: 0 auto;
-      margin-top: -75px;
+      margin-top: -72px;
     }
   }
 
   .page-main__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .page-main__title-wrapper {
+    min-height: 250px;
   }
 
   .page-main__description {

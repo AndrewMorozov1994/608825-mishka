@@ -133,13 +133,14 @@
 
 @media (min-width: 1150px) {
   .catalog {
-    width: 1150px;
+    width: calc(100%);
+    margin-top: 130px;
   }
 
   .catalog__list {
     margin-top: 50px;
     display: flex;
-    width: 1050px;
+    width: calc(91.3%);
     justify-content: space-between;
   }
 
@@ -148,7 +149,28 @@
     min-height: 462px;
   }
 
+  .catalog__image-wrapper {
+    width: calc(100%);
+    min-height: 462px;
+  }
+
+  .catalog__description-wrapper {
+    width: calc(100%);
+    min-height: 197px;
+  }
+
+  .catalog__item-title {
+    margin-top: 28px;
+  }
+
+  .catalog__price {
+    margin-bottom: -4px;
+    margin-left: calc(7.9%);
+  }
+
   .catalog__item {
+    width: calc(30%);
+
     a {
       flex-direction: column;
       justify-content: flex-start;
