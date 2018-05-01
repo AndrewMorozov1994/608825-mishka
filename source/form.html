@@ -69,7 +69,6 @@
       <div class="page-main__title-wrapper">
         <h1 class="page-main__title">Вязание на заказ</h1>
       </div>
-      <div class="container">
         <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="main-form" action="#" method="post">
           <section class="main-form__section main-form__section--radio">
@@ -86,32 +85,34 @@
               </label>
             </div>
           </section>
-          <section class="main-form__section main-form__section--check">
-            <div class="main-form__description__wrapper">
-              <p class="main-form__description">Цвет</p>
-              <span class="main-form__line"></span>
-            </div>
-            <div class="main-form__item-wrapper main-form__item-wrapper--check">
-              <label class="main-form__item">
-                <input class="visually-hidden" type="checkbox">Белый
-              </label>
-              <label class="main-form__item">
-                <input class="visually-hidden" type="checkbox">Серый
-              </label>
-              <label class="main-form__item">
-                <input class="visually-hidden" type="checkbox">&laquo;Тиффани&raquo;
-              </label>
-              <label class="main-form__item">
-                <input class="visually-hidden" type="checkbox">Черный
-              </label>
-              <label class="main-form__item">
-                <input class="visually-hidden" type="checkbox">Розовый
-              </label>
-              <label class="main-form__item">
-                <input class="visually-hidden" type="checkbox">Оранжевый
-              </label>
-            </div>
-          </section>
+          <div class="main-form__wrapper-grey">
+            <section class="main-form__section main-form__section--check">
+              <div class="main-form__description__wrapper">
+                <p class="main-form__description">Цвет</p>
+                <span class="main-form__line"></span>
+              </div>
+              <div class="main-form__item-wrapper main-form__item-wrapper--check">
+                <label class="main-form__item">
+                  <input class="visually-hidden" type="checkbox">Белый
+                </label>
+                <label class="main-form__item">
+                  <input class="visually-hidden" type="checkbox">Серый
+                </label>
+                <label class="main-form__item">
+                  <input class="visually-hidden" type="checkbox">&laquo;Тиффани&raquo;
+                </label>
+                <label class="main-form__item">
+                  <input class="visually-hidden" type="checkbox">Черный
+                </label>
+                <label class="main-form__item">
+                  <input class="visually-hidden" type="checkbox">Розовый
+                </label>
+                <label class="main-form__item">
+                  <input class="visually-hidden" type="checkbox">Оранжевый
+                </label>
+              </div>
+            </section>
+          </div>
           <section class="main-form__section main-form__section--users-info">
             <div class="main-form__description__wrapper">
               <p class="main-form__description">ФИО</p>
@@ -132,28 +133,30 @@
               </label>
             </div>
           </section>
-          <section class="main-form__section main-form__section--phone">
-            <label class="main-form__user-phone">
-              <div class="main-form__description__wrapper">
-                <span class="main-form__description">Тел</span>
-                <span class="main-form__line"></span>
+          <div class="main-form__wrapper-grey">
+            <section class="main-form__section main-form__section--phone">
+              <label class="main-form__user-phone">
+                <div class="main-form__description__wrapper">
+                  <span class="main-form__description">Тел</span>
+                  <span class="main-form__line"></span>
+                </div>
+              </label>
+              <div class="main-form__item-wrapper">
+                <input type="tel" placeholder="+7 XXX XX XX*">
               </div>
-            </label>
-            <div class="main-form__item-wrapper">
-              <input type="tel" placeholder="+7 XXX XX XX*">
-            </div>
-          </section>
-          <section class="main-form__section main-form__section--email">
-            <label for="email" class="main-form__user-email">
-              <div class="main-form__description__wrapper">
-                <span class="main-form__description">e-mail</span>
-                <span class="main-form__line"></span>
+            </section>
+            <section class="main-form__section main-form__section--email">
+              <label for="email" class="main-form__user-email">
+                <div class="main-form__description__wrapper">
+                  <span class="main-form__description">e-mail</span>
+                  <span class="main-form__line"></span>
+                </div>
+              </label>
+              <div class="main-form__item-wrapper">
+                <input type="email" id="email" placeholder="Ваш Email*">
               </div>
-            </label>
-            <div class="main-form__item-wrapper">
-              <input type="email" id="email" placeholder="Ваш Email*">
-            </div>
-          </section>
+            </section>
+          </div>
           <section class="main-form__section main-form__section--wishes">
             <label class="main-form__user-wishes">
               <div class="main-form__description__wrapper">
@@ -166,11 +169,10 @@
             </div>
           </section>
           <div class="main-form__bottom">
-            <small class="main-form__legend"><sup>*</sup>Поля обязательные для заполнения</small>
+            <small class="main-form__legend"><sup>*</sup>Поля обязательны для заполнения</small>
             <button type="submit" class="button-link main-form__send">Отправить заказ</button>
           </div>
         </form>
-      </div>
     </main>
     <footer class="page-footer page-footer--within">
       <div class="page-footer__wrapper">

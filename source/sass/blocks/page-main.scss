@@ -3,10 +3,12 @@
 }
 
 .page-main__description {
+  width: calc(81.25%);
+  padding: 0 calc(9.375%);
+  min-width: 260px;
   font-size: 13px;
   font-weight: 400;
   color: #444444;
-  width: calc(100%);
   margin: 0 auto;
   margin-top: 22px;
 }
@@ -43,11 +45,11 @@
   }
 
   .page-main__description {
-    width: 620px;
+    width: calc(86.98%);
     font-size: 17px;
     line-height: 30px;
-    padding: 0 50px;
-    margin: 0 auto;
+    padding: 0;
+    margin: 74px auto 0 auto;
   }
 
   .page-main__title-wrapper {
@@ -57,7 +59,7 @@
   .page-main__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 0;
+    margin-top: 54px;
   }
 }
 
