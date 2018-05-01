@@ -222,7 +222,7 @@
 
       .main-form__item {
         box-sizing: border-box;
-        padding-left: 80px;
+        padding-left: calc(16%);
         margin-top: 58px;
         width: calc(50%);
 
@@ -373,23 +373,87 @@
 
 @media (min-width: 1150px) {
   .main-form {
-    width: 1150px;
+    width: calc(100%);
+  }
+
+  .main-form__section {
+    width: calc(91.3%);
+
+    &--users-info {
+      .main-form__item-wrapper {
+        width: calc(66.66%);
+        margin-left: 6px;
+      }
+    }
+
+    &--phone {
+      .main-form__item-wrapper {
+        width: calc(66.66%);
+      }
+    }
+
+    &--email {
+      .main-form__item-wrapper {
+        width: calc(66.66%);
+      }
+    }
+
+    &--wishes {
+      .main-form__item-wrapper {
+        width: calc(66.66%);
+      }
+    }
   }
 
   .main-form__item {
-    font-size: 17px;
+    font-size: 19px;
   }
 
-  .main-form__description {
-    margin-left: 115px;
+  .main-form__description__wrapper {
+    width: calc(16.66%);
+    justify-content: space-around;
+    margin-left: -6px;
   }
 
   .main-form__item-wrapper {
-    width: 700px;
+    width: calc(83.33%);
+
+    &--radio {
+      padding-left: calc(8.2%);
+    }
+
+    &--check {
+      .main-form__item {
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(6) {
+          padding-left: 84px;
+        }
+
+        width: calc(30.28%);
+        padding-left: 84px;
+      }
+    }
+  }
+
+  .main-form__user-phone,
+  .main-form__user-email,
+  .main-form__user-wishes {
+    width: calc(16.66%);
+
+    .main-form__description__wrapper {
+      width: calc(100%);
+      justify-content: flex-start;
+      padding-left: calc(37.8%);
+    }
   }
 
   .main-form__bottom {
-    width: 700px;
-    margin: 0 auto;
+    width: calc(60.87%);
+    margin: 21px auto 0 auto;
+  }
+
+  .main-form__send {
+    width: calc(32.85%)
   }
 }

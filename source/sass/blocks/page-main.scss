@@ -75,6 +75,7 @@
   .page-main__title {
     font-size: 53px;
     line-height: 57px;
+    margin-top: 34px;
   }
 
   .page-main__title-wrapper {
@@ -82,8 +83,8 @@
   }
 
   .page-main__description {
-    width: 700px;
-    margin: 0 auto;
+    width: calc(60.87%);
+    margin: 125px auto 0 auto;
   }
 }
 
