@@ -73,41 +73,50 @@
         <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="main-form" action="#" method="post">
           <section class="main-form__section main-form__section--radio">
-            <p class="main-form__description">Тип</p>
+            <div class="main-form__description__wrapper">
+              <p class="main-form__description">Тип</p>
+              <span class="main-form__line"></span>
+            </div>
             <div class="main-form__item-wrapper main-form__item-wrapper--radio">
               <label class="main-form__item">
-                <input type="radio" name="form-radio">Аксессуар для интерьера
+                <input class="visually-hidden" type="radio" name="form-radio">Аксессуар для интерьера
               </label>
               <label class="main-form__item">
-                <input type="radio" name="form-radio">Детская игрушка
+                <input class="visually-hidden" type="radio" name="form-radio">Детская игрушка
               </label>
             </div>
           </section>
           <section class="main-form__section main-form__section--check">
-            <p class="main-form__description">Цвет</p>
+            <div class="main-form__description__wrapper">
+              <p class="main-form__description">Цвет</p>
+              <span class="main-form__line"></span>
+            </div>
             <div class="main-form__item-wrapper main-form__item-wrapper--check">
               <label class="main-form__item">
-                <input type="checkbox">Белый
+                <input class="visually-hidden" type="checkbox">Белый
               </label>
               <label class="main-form__item">
-                <input type="checkbox">Серый
+                <input class="visually-hidden" type="checkbox">Серый
               </label>
               <label class="main-form__item">
-                <input type="checkbox">Тиффани
+                <input class="visually-hidden" type="checkbox">&laquo;Тиффани&raquo;
               </label>
               <label class="main-form__item">
-                <input type="checkbox">Черный
+                <input class="visually-hidden" type="checkbox">Черный
               </label>
               <label class="main-form__item">
-                <input type="checkbox">Розовый
+                <input class="visually-hidden" type="checkbox">Розовый
               </label>
               <label class="main-form__item">
-                <input type="checkbox">Оранжевый
+                <input class="visually-hidden" type="checkbox">Оранжевый
               </label>
             </div>
           </section>
           <section class="main-form__section main-form__section--users-info">
-            <p class="main-form__description">ФИО</p>
+            <div class="main-form__description__wrapper">
+              <p class="main-form__description">ФИО</p>
+              <span class="main-form__line"></span>
+            </div>
             <div class="main-form__item-wrapper">
               <label class="main-form__user-name">
                 Имя:
@@ -125,7 +134,10 @@
           </section>
           <section class="main-form__section main-form__section--phone">
             <label class="main-form__user-phone">
-              <span class="main-form__description">Тел</span>
+              <div class="main-form__description__wrapper">
+                <span class="main-form__description">Тел</span>
+                <span class="main-form__line"></span>
+              </div>
             </label>
             <div class="main-form__item-wrapper">
               <input type="tel" placeholder="+7 XXX XX XX*">
@@ -133,7 +145,10 @@
           </section>
           <section class="main-form__section main-form__section--email">
             <label for="email" class="main-form__user-email">
-              <span class="main-form__description">e-mail</span>
+              <div class="main-form__description__wrapper">
+                <span class="main-form__description">e-mail</span>
+                <span class="main-form__line"></span>
+              </div>
             </label>
             <div class="main-form__item-wrapper">
               <input type="email" id="email" placeholder="Ваш Email*">
@@ -141,10 +156,13 @@
           </section>
           <section class="main-form__section main-form__section--wishes">
             <label class="main-form__user-wishes">
-              <span class="main-form__description">Доп</span>
+              <div class="main-form__description__wrapper">
+                <span class="main-form__description">Доп</span>
+                <span class="main-form__line"></span>
+              </div>
             </label>
             <div class="main-form__item-wrapper">
-              <textarea cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea cols="10" rows="0" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </section>
           <div class="main-form__bottom">
