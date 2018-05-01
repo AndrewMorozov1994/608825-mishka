@@ -378,6 +378,7 @@
 
   .main-form__section {
     width: calc(91.3%);
+    max-width: 1350px;
 
     &--users-info {
       .main-form__item-wrapper {
@@ -450,6 +451,7 @@
 
   .main-form__bottom {
     width: calc(60.87%);
+    max-width: 1350px;
     margin: 21px auto 0 auto;
   }
 
