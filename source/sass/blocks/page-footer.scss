@@ -58,11 +58,16 @@
 @media (min-width: 768px) {
   .page-footer {
     padding: 0;
-    margin-top: 58px;
+    margin-top: -17px;
     width: calc(100%);
+    position: relative;
 
     &--within {
-      margin-top: 50px;
+      margin-top: -8px;
+    }
+
+    &--form {
+      margin-top: -20px;
     }
   }
 
@@ -95,7 +100,7 @@
 
 @media (min-width: 1250px) {
   .page-footer--index {
-    margin-top: 105px;
+    margin-top: 30px;
 
     .page-footer__wrapper {
       width: calc(84%);
@@ -113,20 +118,26 @@
 }
 
 @media (min-width: 1150px) {
-  .page-footer--within {
-    margin-top: 50px;
+  .page-footer {
+    &--within {
+      margin-top: -70px;
 
-    .page-footer__wrapper {
-      width: calc(91.3%);
-      max-width: 1350px;
+      .page-footer__wrapper {
+        width: calc(91.3%);
+        max-width: 1350px;
+      }
+
+      .page-footer__bottom {
+        width: calc(18.1%);
+      }
+
+      .page-footer__list {
+        width: calc(14.3%);
+      }
     }
 
-    .page-footer__bottom {
-      width: calc(18.1%);
-    }
-
-    .page-footer__list {
-      width: calc(14.3%);
+    &--form {
+      margin-top: -20px;
     }
   }
 }
