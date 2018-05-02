@@ -21,6 +21,7 @@
   align-items: center;
   margin-top: -4px;
   min-width: 320px;
+  border-top: 1px solid grey;
 }
 
 .page-main__title {
@@ -32,15 +33,16 @@
 @media (min-width: 768px) {
   .page-main {
     width: calc(100%);
+    position: relative;
+    z-index: 2;
 
     &--index {
-      margin-top: -75px;
+      top: -75px;
       border-top: 1px solid grey;
     }
 
     &--within {
-      margin-top: -72px;
-      border-top: 1px solid grey;
+      top: -72px;
     }
   }
 
@@ -68,7 +70,7 @@
     &--within {
       width: auto;
       margin: 0 auto;
-      margin-top: -72px;
+      top: -72px;
     }
   }
 
@@ -93,6 +95,6 @@
   .page-main--index {
     width: calc(100%);
     margin: 0 auto;
-    margin-top: -75px;
+    top: -75px;
   }
 }

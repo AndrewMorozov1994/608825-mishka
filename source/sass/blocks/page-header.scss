@@ -2,6 +2,8 @@
   width: calc(100%);
   padding: 0;
   margin: 0 auto;
+  position: relative;
+  z-index: 5;
 }
 
 .page-header__logo-image {
@@ -69,6 +71,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    margin-top: -1px;
 
     .page-header__logo-container {
       order: 2;
