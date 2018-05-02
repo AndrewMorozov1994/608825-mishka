@@ -196,22 +196,26 @@
           </div>
         </div>
       </section>
-      <section class="modal"><!-- Модалка-->
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__option">Выберите размер:</p>
-        <form class="modal__form" action="#" method="post">
-          <label class="modal__label">
-            <input type="radio" name="radio">S
-          </label>
-          <label class="modal__label">
-            <input type="radio" name="radio">M
-          </label>
-          <label class="modal__label">
-            <input type="radio" name="radio">L
-          </label>
-          <button class="button modal__button" type="submit">Добавить</button>
-        </form>
-      </section>
+      <div class="modal">
+        <section class="modal__wrapper"><!-- Модалка-->
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <p class="modal__option">Выберите размер:</p>
+          <form class="modal__form" action="#" method="post">
+            <div class="modal__radio">
+              <input id="radio1" type="radio" name="radio" checked>
+              <input id="radio2" type="radio" name="radio">
+              <input id="radio3" type="radio" name="radio">
+              <div class="modal__label-wrapper">
+                <label for="radio1" class="modal__label">S</label>
+                <label for="radio2" class="modal__label">M</label>
+                <label for="radio3" class="modal__label">L</label>
+              </div>
+            </div>
+            <button class="button modal__button" type="submit">Добавить</button>
+          </form>
+        </section>
+        <div class="modal__overlay"></div>
+      </div>
     </main>
     <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper">

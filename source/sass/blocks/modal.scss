@@ -1,8 +1,40 @@
 .modal {
-  width: calc(100%);
-  margin: 0 auto;
-  text-align: center;
   display: none;
+  position: fixed;
+  width: calc(100%);
+  min-width: 320px;
+  min-height: 311px;
+  top: calc(35%);
+  z-index: 100;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.modal__wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  z-index: 100;
+  text-align: center;
+  background-color: white;
+  border-bottom: 1px solid grey;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0 2px 10px 2px grey;
+}
+
+.modal__overlay {
+  content: "";
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100%);
+  min-width: 320px;
+  height: calc(1000vw);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .modal__title {
@@ -26,24 +58,60 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  label {
-    width: 82px;
+  input[type="radio"] {
+    display: none;
   }
+}
+.modal__radio {
+  width: calc(100%);
+}
+
+.modal__label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.modal__label {
+  width: 82px;
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  align-self: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input[id="radio1"]:checked ~ .modal__label-wrapper label[for="radio1"],
+input[id="radio2"]:checked ~ .modal__label-wrapper label[for="radio2"],
+input[id="radio3"]:checked ~ .modal__label-wrapper label[for="radio3"]{
+  border-color: #63d1bb;
 }
 
 .modal__button {
+  width: 260px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
-  margin: 0 auto;
+  margin: 30px auto 0 auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: none;
   background-color: #63d1bb;
   color: white;
 }
 
 @media (min-width: 768px) {
   .modal {
-    width: 566px;
     min-height: 336px;
+  }
+
+  .modal__wrapper {
+    width: 566px;
+  }
+
+  .modal__form {
+    width: 350px;
   }
 
   .modal__title {
@@ -53,7 +121,15 @@
     text-transform: uppercase;
   }
 
+  .modal__label {
+    width: 112px;
+  }
+
   .modal__option {
     font-size: 17px;
+  }
+
+  .modal__button {
+    width: 350px;
   }
 }
