@@ -1,11 +1,11 @@
 .container {
-  width: 260px;
+  width: calc(81.25%);
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    width: calc(87%);
   }
 }
 

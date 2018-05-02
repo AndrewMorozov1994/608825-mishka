@@ -1,0 +1,143 @@
+.page-footer {
+  width: calc(100%);
+  margin: 38px auto 0 auto;
+  background-color: #f1f1f1;
+
+  &--within {
+    margin-top: 58px;
+  }
+}
+
+.page-footer__wrapper {
+  padding-top: 30px;
+}
+
+.page-footer__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(45%);
+  min-width: 140px;
+}
+
+.page-footer__item {
+  &--fb {
+    margin-top: -5px;
+  }
+}
+
+.page-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  width: calc(87%);
+  box-sizing: border-box;
+  padding: 9px calc(13.46%);
+  margin: 15px auto 0 auto;
+  border-top: 1px solid grey;
+}
+
+.page-footer__studio {
+  font-size: 19px;
+  line-height: 18px;
+  margin-left: 3px;
+}
+
+.page-footer__logo-mishka {
+  display: none;
+}
+
+.page-footer__logo {
+  margin-top: 14px;
+  fill: #63d1bb;
+  margin-right: 4px;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    padding: 0;
+    margin-top: -17px;
+    width: calc(100%);
+    position: relative;
+
+    &--within {
+      margin-top: -8px;
+    }
+
+    &--form {
+      margin-top: -20px;
+    }
+  }
+
+  .page-footer__logo-mishka {
+    display: block;
+    min-width: 102px;
+  }
+
+  .page-footer__wrapper {
+    width: calc(87%);
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-between;
+  }
+
+  .page-footer__list {
+    width: calc(22%);
+    padding-left: 85px;
+    margin-top: 10px;
+  }
+
+  .page-footer__bottom {
+    margin: -8px 0 0 0;
+    width: calc(27.7%);
+    padding: 0;
+    border: none;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-footer--index {
+    margin-top: 30px;
+
+    .page-footer__wrapper {
+      width: calc(84%);
+      max-width: 1350px;
+    }
+
+    .page-footer__bottom {
+      width: calc(18.1%);
+    }
+
+    .page-footer__list {
+      width: calc(14.3%);
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer {
+    &--within {
+      margin-top: -70px;
+
+      .page-footer__wrapper {
+        width: calc(91.3%);
+        max-width: 1350px;
+      }
+
+      .page-footer__bottom {
+        width: calc(18.1%);
+      }
+
+      .page-footer__list {
+        width: calc(14.3%);
+      }
+    }
+
+    &--form {
+      margin-top: -20px;
+    }
+  }
+}

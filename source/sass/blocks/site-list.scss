@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  width: auto;
+  width: calc(100%);
 
   .site-list__item {
     &:nth-child(3) {
@@ -47,14 +47,15 @@
 
 .site-list__container {
   width: 260px;
+  box-sizing: border-box;
   margin: 0 auto;
-  padding-left: 45px;
+  padding-left: 15px;
 }
 
 .site-list__item {
   padding-top: 35px;
   padding-bottom: 35px;
-  padding-left: 30px;
+  padding-left: 60px;
   border-top: 1px solid grey;
 
   &:nth-child(1) {
@@ -74,6 +75,7 @@
       display: block;
       position: absolute;
       background-color: #ffffff;
+      z-index: 3;
 
       &:last-child {
         top: 267px;
