@@ -28,12 +28,12 @@ buttontoggle.addEventListener("click", function (evt) {
 buttonopen.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalwindow.classList.add("modal--opened");
-})
+});
 
 modalclose.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalwindow.classList.remove("modal--opened");
-})
+});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {

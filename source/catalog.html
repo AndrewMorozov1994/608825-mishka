@@ -65,7 +65,7 @@
       <section class="catalog">
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a href="#">
+            <a class="catalog__link" href="#">
               <div class="catalog__image-wrapper">
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desctop@2x.jpg 2x">
@@ -81,7 +81,7 @@
             </a>
           </li>
           <li class="catalog__item">
-            <a href="#">
+            <a class="catalog__link" href="#">
               <div class="catalog__image-wrapper">
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desctop@2x.jpg 2x">
@@ -97,7 +97,7 @@
             </a>
           </li>
           <li class="catalog__item">
-            <a href="#">
+            <a class="catalog__link" href="#">
               <div class="catalog__image-wrapper">
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desctop@2x.jpg 2x">
@@ -117,28 +117,40 @@
       <section class="making">
         <div class="making__wrapper">
           <p class="making__title">Процесс производства</p>
-          <img class="making__video" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео">
+          <div class="making__video">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео">
+            </picture>
+            <a class="making__play" href="#"><span class="visually-hidden">Воспроизвести видео</span></a>
+          </div>
+        </div>
           <p class="making__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         </div>
         <a class="making__button button-link" href="#">Сделать заказ</a>
       </section>
-      <section class="modal"><!-- Модалка-->
+    </main>
+    <div class="modal">
+      <section class="modal__wrapper"><!-- Модалка-->
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__option">Выберите размер:</p>
         <form class="modal__form" action="#" method="post">
-          <label class="modal__label">
-            <input type="radio" name="radio">S
-          </label>
-          <label class="modal__label">
-            <input type="radio" name="radio">M
-          </label>
-          <label class="modal__label">
-            <input type="radio" name="radio">L
-          </label>
+          <div class="modal__radio">
+            <input id="radio1" type="radio" name="radio" checked>
+            <input id="radio2" type="radio" name="radio">
+            <input id="radio3" type="radio" name="radio">
+            <div class="modal__label-wrapper">
+              <label for="radio1" class="modal__label">S</label>
+              <label for="radio2" class="modal__label">M</label>
+              <label for="radio3" class="modal__label">L</label>
+            </div>
+          </div>
           <button class="button modal__button" type="submit">Добавить</button>
         </form>
       </section>
-    </main>
+      <div class="modal__overlay"></div>
+    </div>
     <footer class="page-footer page-footer--within">
       <div class="page-footer__wrapper">
         <svg class="page-footer__logo-mishka" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.589px" height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034" xml:space="preserve">
