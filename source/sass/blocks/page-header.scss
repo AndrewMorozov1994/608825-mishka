@@ -8,7 +8,7 @@
 
 .page-header__logo-image {
   display: block;
-  width: 86px;
+  width: 100%;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 22px;
@@ -60,7 +60,7 @@
 
   .page-header__logo-image {
     margin-left: 0;
-    width: 113px;
+    margin-bottom: 9px;
   }
 }
 
@@ -74,7 +74,12 @@
     margin-top: -1px;
 
     .page-header__logo-container {
+      width: 156px;
       order: 2;
+    }
+
+    .page-header__logo-image {
+      margin-top: 9px;
     }
   }
 }
@@ -88,7 +93,12 @@
     flex-direction: row;
 
     .page-header__logo-container {
+      width: 156px;
       order: 2;
+    }
+
+    .page-header__logo-image {
+      margin-top: 9px;
     }
   }
 }

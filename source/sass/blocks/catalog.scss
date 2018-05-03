@@ -11,16 +11,18 @@
     width: calc(100%);
     height: auto;
   }
+}
 
-  .catalog__image {
-    background-color: #e8e8ea;
-  }
+.catalog__image {
+  background-color: #e8e8ea;
+  width: 260px;
 }
 
 .catalog__image-wrapper {
   text-align: center;
   min-width: 260px;
   height: 195px;
+  overflow: hidden;
 }
 
 .catalog__item {
@@ -108,8 +110,7 @@
   }
 
   .catalog__image {
-    width: 334px;
-    min-height: 334px;
+    width: 100%;
   }
 
   .catalog__image-wrapper {
@@ -146,8 +147,7 @@
   }
 
   .catalog__image {
-    width: 316px;
-    min-height: 462px;
+    width: 100%;
   }
 
   .catalog__image-wrapper {
