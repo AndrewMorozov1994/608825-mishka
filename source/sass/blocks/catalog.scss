@@ -47,7 +47,8 @@
 .catalog__description-wrapper {
   box-sizing: border-box;
   border: 1px solid grey;
-  min-width: 260px;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .catalog__description {
@@ -115,7 +116,8 @@
 
   .catalog__image-wrapper {
     width: calc(50%);
-    min-height: 334px;
+    height: 100%;
+    margin-bottom: -6px;
   }
 
   .catalog__description-wrapper {
