@@ -3,6 +3,7 @@ var buttontoggle = document.querySelector(".page-header__button");
 var buttonopen = document.querySelector(".products-item__link");
 var modalwindow = document.querySelector(".modal");
 var modalclose = document.querySelector(".modal__button");
+var catalogLink = document.querySelectorAll(".catalog__link");
 
 for (var i = 0; i < nav.length; i++){
   nav[i].classList.add("site-list--closed");
@@ -25,15 +26,26 @@ buttontoggle.addEventListener("click", function (evt) {
   }
 });
 
-buttonopen.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalwindow.classList.add("modal--opened");
-})
+if(buttonopen) {
+  buttonopen.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modalwindow.classList.add("modal--opened");
+  });
+}
+
+if(catalogLink) {
+  for (var j = 0; j < catalogLink.length; j++) {
+    catalogLink[j].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modalwindow.classList.add("modal--opened");
+    })
+  }
+}
 
 modalclose.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalwindow.classList.remove("modal--opened");
-})
+});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {

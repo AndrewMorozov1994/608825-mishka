@@ -57,13 +57,19 @@
 .contacts__map {
   margin-top: 25px;
   position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
 .contacts__image-map {
-  min-width: 320px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: -3;
+
+  img {
+    width: 100%;
+  }
 }
 
 .contacts__iframe {
