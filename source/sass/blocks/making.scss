@@ -14,15 +14,14 @@
   position: relative;
   margin-left: 33.8%;
 
-  &::before {
+  svg {
     position: absolute;
     content: "";
     width: 32px;
     height: 32px;
     top: 6px;
     left: -55px;
-    background-image: url("../../img/icon-video.svg");
-    background-repeat: no-repeat;
+    fill: #63d1bb;
   }
 }
 
@@ -43,6 +42,10 @@
   background-image: url("../../img/icon-play.svg");
   top: calc(50% - 39px);
   left: calc(50% - 51px);
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .making__description {

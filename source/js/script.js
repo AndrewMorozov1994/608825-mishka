@@ -3,7 +3,7 @@ var buttontoggle = document.querySelector(".page-header__button");
 var buttonopen = document.querySelector(".products-item__link");
 var modalwindow = document.querySelector(".modal");
 var modalclose = document.querySelector(".modal__button");
-var catalogLink = document.querySelectorAll(".catalog__link");
+var catalogLink = document.querySelectorAll(".catalog__svg-link");
 
 for (var i = 0; i < nav.length; i++){
   nav[i].classList.add("site-list--closed");

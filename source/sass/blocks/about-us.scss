@@ -24,80 +24,69 @@
   width: calc(79%);
   position: relative;
 
-  &::before {
+  svg {
     position: absolute;
     content: "";
     top: -55px;
     left: 3px;
+    fill: #63d1bb;
   }
 
   &:first-child {
     margin-top: 0;
     width: calc(69%);
 
-    &::before {
+    svg {
       width: 32px;
       height: 37px;
       left: 8px;
-      background-image: url("../../img/icon-feature-flower.svg");
-      background-repeat: no-repeat;
     }
   }
 
   &:nth-child(2) {
-    &::before {
+    svg {
       width: 47px;
       height: 27px;
       top: -54px;
       left: 0;
-      background-image: url("../../img/icon-feature-money.svg");
-      background-repeat: no-repeat;
     }
   }
 
   &:nth-child(3) {
-    &::before {
+    svg {
       width: 34px;
       height: 27px;
       left: 8px;
       top: -50px;
-      background-image: url("../../img/icon-feature-heart.svg");
-      background-repeat: no-repeat;
     }
   }
 
   &:nth-child(4) {
     width: calc(95%);
 
-    &::before {
+    svg {
       width: 35px;
       height: 34px;
       top: -52px;
-      background-image: url("../../img/icon-feature-ball.svg");
-      background-repeat: no-repeat;
     }
   }
 
   &:nth-child(5) {
     width: calc(100%);
 
-    &::before {
+    svg {
       width: 55px;
       height: 23px;
       left: -6px;
       top: -50px;
-      background-image: url("../../img/icon-feature-rocket.svg");
-      background-repeat: no-repeat;
     }
   }
 
   &:nth-child(6) {
-    &::before {
+    svg {
       width: 33px;
       height: 32px;
       top: -52px;
-      background-image: url("../../img/icon-feature-gift.svg");
-      background-repeat: no-repeat;
     }
   }
 }
