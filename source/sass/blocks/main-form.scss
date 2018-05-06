@@ -49,6 +49,10 @@
       padding-bottom: 16px;
       border: none;
       border-bottom: 2px solid black;
+
+      &:hover {
+        border-color: #63d1bb;
+      }
     }
 
     .main-form__item-wrapper {
@@ -156,6 +160,15 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
     padding-bottom: 16px;
     border: none;
     border-bottom: 2px solid black;
+
+    &:hover {
+      border-color: #63d1bb;
+
+      & + .main-form__icon-phone {
+        fill: #63d1bb;
+        opacity: 1;
+      }
+    }
   }
 
   input[type="email"] {
@@ -163,6 +176,15 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
     padding-bottom: 16px;
     border: none;
     border-bottom: 2px solid black;
+
+    &:hover {
+      border-color: #63d1bb;
+
+      & + .main-form__icon-mail {
+        fill: #63d1bb;
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -206,6 +228,10 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
     margin-top: 27px;
     padding-top: 16px;
     padding-bottom: 16px;
+
+    &:hover {
+      background-color: #444444;
+    }
   }
 }
 
@@ -245,6 +271,30 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
   .main-form__item {
     font-size: 19px;
     margin: 0;
+
+    &:hover {
+      color: #63d1bb;
+
+      .main-form__radio-indicator {
+        box-shadow: 0 0 0 10px white, 0 0 0 12px #63d1bb;
+      }
+
+      .main-form__check-indicator {
+        border-color: #63d1bb;
+      }
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+
+      .main-form__radio-indicator {
+        box-shadow: 0 0 0 10px white, 0 0 0 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .main-form__check-indicator {
+        border-color: rgba(0, 0, 0, 0.3);
+      }
+    }
   }
 
   .main-form__check-indicator {
@@ -312,6 +362,10 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
 
     textarea {
       font-size: 19px;
+
+      &:hover {
+        border-color: #63d1bb;
+      }
     }
   }
 
