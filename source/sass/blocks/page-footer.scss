@@ -36,7 +36,7 @@
   box-sizing: border-box;
   padding: 9px calc(13.46%);
   margin: 15px auto 0 auto;
-  border-top: 1px solid grey;
+  border-top: 1px solid #ececec;
 }
 
 .page-footer__studio {
@@ -74,13 +74,22 @@
   .page-footer__logo-mishka {
     display: block;
     min-width: 102px;
+    transform: scale(1.45);
+
+    &:hover {
+      fill: #63d1bb;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__wrapper {
     width: calc(87%);
     margin: 0 auto;
     display: flex;
-    padding: 50px 0;
+    padding: 53px 0 47px 0;
     justify-content: space-between;
   }
 
@@ -90,11 +99,37 @@
     margin-top: 10px;
   }
 
+  .page-footer__item {
+    svg {
+      &:hover {
+        fill: #63d1bb;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
+
   .page-footer__bottom {
-    margin: -8px 0 0 0;
+    margin: -9px 0 0 0;
     width: calc(27.7%);
     padding: 0;
     border: none;
+
+    &:hover {
+      .page-footer__logo {
+        fill: #46c1ae;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__logo {
+    margin-right: 0;
   }
 }
 
@@ -112,7 +147,12 @@
     }
 
     .page-footer__list {
-      width: calc(14.3%);
+      width: calc(13.8%);
+      padding-left: 88px;
+    }
+
+    .page-footer__studio {
+      margin-left: 5px;
     }
   }
 }

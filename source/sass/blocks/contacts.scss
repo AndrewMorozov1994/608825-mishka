@@ -1,11 +1,25 @@
 .contacts {
   margin-top: 90px;
   width: calc(100%);
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -46px;
+    width: calc(100%);
+    height: 6px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-position: center;
+    background-repeat: repeat-x;
+  }
 }
 
 .contacts__title {
   font-size: 18px;
   margin: 0;
+  margin-left: -2px;
   padding: 0 calc(9.375%);
 }
 
@@ -45,6 +59,7 @@
 
     span {
       border-bottom: 1px solid #63d1bb;
+      padding-bottom: 5px;
     }
   }
 
@@ -83,18 +98,10 @@
   .contacts {
     width: calc(100%);
     margin-top: 191px;
-    position: relative;
 
     &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -40px;
-      width: calc(100%);
       height: 17px;
-      background-image: url("../../img/bg-zigzag-line.svg");
-      background-position: center;
-      background-repeat: repeat-x;
+      top: -77px;
     }
   }
 
@@ -133,6 +140,16 @@
     &--email {
       width: calc(31.4%);
       margin-left: 10px;
+
+      span {
+        &:hover {
+          color: #63d1bb;
+        }
+
+        &:active {
+          opacity: 0.3;
+        }
+      }
     }
 
     &--info-address {
@@ -152,8 +169,9 @@
   .contacts__wrapper {
     .contacts__send-us {
       width: calc(30%);
-      margin-top: 53px;
+      margin-top: 51px;
       font-size: 17px;
+      padding: 15px 0 13px 0;
     }
   }
 }
@@ -167,12 +185,14 @@
 
     &::before {
       height: 23px;
+      top: -38px;
     }
   }
 
   .contacts__main-wrapper {
     width: calc(83.33%);
     margin-left: auto;
+    margin-top: 2px;
   }
 
   .contacts__title {
@@ -198,7 +218,7 @@
       margin: 0;
       margin-top: -100px;
       margin-right: auto;
-      width: calc(26%);
+      width: calc(26.3%);
     }
   }
 

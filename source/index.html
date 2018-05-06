@@ -19,22 +19,22 @@
       <ul class="site-list site-list--index">
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="catalog.html">Каталог товаров</a>
+            <a href="catalog.html"><span>Каталог товаров</span></a>
           </div>
         </li>
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="form.html">Вязание на заказ</a>
+            <a href="form.html"><span>Вязание на заказ</span></a>
           </div>
         </li>
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="#">Новые поступления</a>
+            <a href="#"><span>Новые поступления</span></a>
           </div>
         </li>
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="#">Распродажа</a>
+            <a href="#"><span>Распродажа</span></a>
           </div>
         </li>
       </ul>
@@ -57,7 +57,7 @@
         </li>
         <li class="site-list__item">
           <div class="site-list__container">
-            <a class="site-list__delivery" href="#">Бесплатная доставка по России</a>
+            <a class="site-list__delivery" href="#"><span>Бесплатная доставка по России</span></a>
           </div>
         </li>
       </ul>
@@ -224,7 +224,7 @@
               <label for="radio3" class="modal__label">L</label>
             </div>
           </div>
-          <button class="button modal__button" type="submit">Добавить</button>
+          <button class="button-link modal__button" type="submit">Добавить</button>
         </form>
       </section>
       <div class="modal__overlay"></div>
@@ -232,7 +232,9 @@
     <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper">
         <a href="#">
-        <svg class="page-footer__logo-mishka" width="102" height="34"><use xlink:href="img/sprite.svg#logo-tablet"></use></svg>
+          <svg class="page-footer__logo-mishka" width="102" height="34">
+            <use width="102" xlink:href="img/sprite.svg#logo-tablet"></use>
+          </svg>
         </a>
         <ul class="page-footer__list">
           <li class="page-footer__item page-footer__item--inst">
@@ -254,12 +256,10 @@
             </a>
           </li>
         </ul>
-        <div class="page-footer__bottom">
+        <a class="page-footer__bottom" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="page-footer__studio">Разработано</p>
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="page-footer__logo" width="27" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
-          </a>
-        </div>
+          <svg class="page-footer__logo" width="27" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
+        </a>
       </div>
     </footer>
     <script src="js/script.js"></script>

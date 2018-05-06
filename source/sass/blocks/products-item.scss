@@ -34,7 +34,7 @@
 }
 
 .products-item__string {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #ececec;
 }
 
 .products-item__cols {
@@ -88,7 +88,7 @@
 @media (min-width: 768px) {
   .products-item {
     width: calc(87%);
-    margin: 45px auto 0 auto;
+    margin: 46px auto 0 auto;
     padding: 0;
   }
 
@@ -141,10 +141,11 @@
   .products-item__link {
     font-size: 17px;
     margin-top: 34px;
+    padding-bottom: 13px;
   }
 
   .products-item__item-of-week {
-    margin: 0 16px 6px 0;
+    margin: 0 16px 4px 0;
     line-height: 17px;
     width: calc(14%);
     text-align: center;
@@ -201,6 +202,11 @@
     align-items: flex-end;
   }
 
+  .products-item__cols {
+    padding-top: 8px;
+    padding-bottom: 11px;
+  }
+
   .products-item__image {
     width: 525px;
     min-height: 636px;
@@ -208,7 +214,7 @@
   }
 
   .products-item__des-and-feat-wrapper {
-    margin-bottom: 215px;
+    margin-bottom: 217px;
     width: calc(33.37%);
   }
 
@@ -218,5 +224,6 @@
 
   .products-item__buy {
     width: calc(33.37%);
+    margin-left: 0;
   }
 }
