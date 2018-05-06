@@ -2,7 +2,7 @@
   width: calc(81.25%);
   margin: 0 auto;
   box-sizing: border-box;
-  border: 1px solid grey;
+  border: 1px solid #ececec;
 }
 
 .making__wrapper {
@@ -46,6 +46,11 @@
   &:hover {
     transform: scale(1.2);
   }
+
+  &:active {
+    opacity: 0.6;
+    transform: scale(0.8);
+  }
 }
 
 .making__description {
@@ -69,6 +74,10 @@
   .making {
     width: calc(87%);
     margin: -5px auto 0 auto;
+
+    &:hover {
+      box-shadow: 0 5px 10px 0 #ececec;
+    }
   }
 
   .making__wrapper {
