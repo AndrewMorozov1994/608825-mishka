@@ -26,22 +26,26 @@
 .site-list__link {
   position: relative;
 
-  &::before {
+  &:hover {
+    span {
+      opacity: 0.6;
+    }
+
+    svg {
+      fill: #63d1bb;
+      opacity: 1;
+    }
+  }
+
+  svg {
     display: block;
     position: absolute;
-    width: 18px;
+    width: 21px;
     top: 0;
     left: -50px;
     height: 18px;
     content: "";
-  }
-
-  &--search::before {
-    background: no-repeat center url("../../img/icon-search.svg");
-  }
-
-  &--crate::before {
-    background: no-repeat center url("../../img/icon-cart.svg");
+    opacity: 0.2;
   }
 }
 
@@ -161,7 +165,7 @@
         display: none;
       }
 
-      &::before {
+      svg {
         left: -230px;
       }
     }
