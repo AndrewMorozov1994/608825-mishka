@@ -105,13 +105,13 @@
 
 .main-form__radio-indicator {
   position: absolute;
-  top: 0;
+  top: 4px;
   left: -50px;
   content: "";
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px white, 0 0 0 12px black;
+  box-shadow: 0 0 0 9px white, 0 0 0 11px black;
   background-color: white;
 }
 
@@ -122,8 +122,8 @@
   height: 39px;
   box-sizing: border-box;
   border: 2px solid black;
-  left: -65px;
-  top: -10px;
+  left: -62px;
+  top: -12px;
 }
 
 input[type="radio"]:checked + .main-form__radio-indicator {
@@ -133,7 +133,7 @@ input[type="radio"]:checked + .main-form__radio-indicator {
 input[type="checkbox"]:checked + .main-form__check-indicator {
   background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 70%;
   background-position: center center;
 }
 
@@ -208,15 +208,15 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
 
 .main-form__icon-phone {
   position: absolute;
-  right: 0;
+  right: 8px;
   top: 15px;
   opacity: 0.2;
 }
 
 .main-form__icon-mail {
   position: absolute;
-  right: 0;
-  top: 5px;
+  right: 4px;
+  top: 9px;
   opacity: 0.2;
 }
 
