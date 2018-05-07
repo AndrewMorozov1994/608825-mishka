@@ -71,7 +71,7 @@
         <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="main-form" action="#" method="post">
           <section class="main-form__section main-form__section--radio">
-            <div class="main-form__description__wrapper">
+            <div class="main-form__description-wrapper">
               <p class="main-form__description">Тип</p>
               <span class="main-form__line"></span>
             </div>
@@ -88,7 +88,7 @@
           </section>
           <div class="main-form__wrapper-grey">
             <section class="main-form__section main-form__section--check">
-              <div class="main-form__description__wrapper">
+              <div class="main-form__description-wrapper">
                 <p class="main-form__description">Цвет</p>
                 <span class="main-form__line"></span>
               </div>
@@ -99,7 +99,7 @@
                 </label>
                 <label class="main-form__item">
                   <input class="visually-hidden" type="checkbox" checked>Серый
-                  <span class="main-form__check-indicator"></span>
+                  <span class="main-form__check-indicator main-form__check-indicator--move"></span>
                 </label>
                 <label class="main-form__item">
                   <input class="visually-hidden" type="checkbox">&laquo;Тиффани&raquo;
@@ -107,7 +107,7 @@
                 </label>
                 <label class="main-form__item">
                   <input class="visually-hidden" type="checkbox">Черный
-                  <span class="main-form__check-indicator"></span>
+                  <span class="main-form__check-indicator main-form__check-indicator--move"></span>
                 </label>
                 <label class="main-form__item">
                   <input class="visually-hidden" type="checkbox">Розовый
@@ -115,13 +115,13 @@
                 </label>
                 <label class="main-form__item">
                   <input class="visually-hidden" type="checkbox">Оранжевый
-                  <span class="main-form__check-indicator"></span>
+                  <span class="main-form__check-indicator main-form__check-indicator--move"></span>
                 </label>
               </div>
             </section>
           </div>
           <section class="main-form__section main-form__section--users-info">
-            <div class="main-form__description__wrapper">
+            <div class="main-form__description-wrapper">
               <p class="main-form__description">ФИО</p>
               <span class="main-form__line"></span>
             </div>
@@ -142,7 +142,7 @@
           </section>
           <div class="main-form__wrapper-grey">
             <section class="main-form__section main-form__section--phone">
-              <label for="tel" class="main-form__user-phone main-form__description__wrapper">
+              <label for="tel" class="main-form__description-wrapper main-form__description-wrapper--phone">
                   <span class="main-form__description">Тел</span>
                   <span class="main-form__line"></span>
               </label>
@@ -152,7 +152,7 @@
               </div>
             </section>
             <section class="main-form__section main-form__section--email">
-              <label for="email" class="main-form__user-email main-form__description__wrapper">
+              <label for="email" class="main-form__description-wrapper main-form__description-wrapper--email">
                   <span class="main-form__description">e-mail</span>
                   <span class="main-form__line"></span>
               </label>
@@ -163,7 +163,7 @@
             </section>
           </div>
           <section class="main-form__section main-form__section--wishes">
-            <label class="main-form__user-wishes main-form__description__wrapper">
+            <label class="main-form__description-wrapper main-form__description-wrapper--wishes">
                 <span class="main-form__description">Доп</span>
                 <span class="main-form__line"></span>
             </label>
@@ -211,5 +211,7 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script defer src="js/svgxuse.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

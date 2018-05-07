@@ -164,7 +164,7 @@
 @media (min-width: 1150px) {
   .page-footer {
     &--within {
-      margin-top: -70px;
+      margin-top: -75px;
 
       .page-footer__wrapper {
         width: calc(91.3%);
@@ -172,16 +172,16 @@
       }
 
       .page-footer__bottom {
-        width: calc(18.1%);
+        width: calc(18%);
       }
 
       .page-footer__list {
-        width: calc(14.3%);
+        width: calc(13.8%);
       }
     }
 
     &--form {
-      margin-top: -20px;
+      margin-top: -27px;
     }
   }
 }

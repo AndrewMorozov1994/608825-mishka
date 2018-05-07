@@ -168,7 +168,7 @@
 @media (min-width: 1150px) {
   .catalog {
     width: calc(100%);
-    margin-top: 130px;
+    margin-top: 132px;
   }
 
   .catalog__list {
@@ -183,6 +183,10 @@
     width: 100%;
   }
 
+  .catalog__svg-link {
+    margin-right: -3px;
+  }
+
   .catalog__image-wrapper {
     width: calc(100%);
     min-height: 462px;
@@ -190,7 +194,7 @@
 
   .catalog__description-wrapper {
     width: calc(100%);
-    min-height: 197px;
+    min-height: 200px;
   }
 
   .catalog__item-title {
@@ -198,7 +202,8 @@
   }
 
   .catalog__price {
-    margin-bottom: -4px;
+    margin-bottom: -2px;
+    padding-top: 23px;
     margin-left: calc(7.9%);
   }
 

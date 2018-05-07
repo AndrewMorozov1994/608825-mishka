@@ -98,6 +98,11 @@
     margin-left: calc(15.7%);
     margin-top: 34px;
     order: 2;
+
+    svg {
+      top: -4px;
+      left: -64px;
+    }
   }
 
   .making__description {
@@ -123,7 +128,7 @@
     min-height: 455px;
     max-width: 1350px;
     margin: 0 auto;
-    margin-top: 4px;
+    margin-top: 1px;
     margin-bottom: 105px;
   }
 
@@ -135,8 +140,8 @@
     margin-top: 95px;
     order: 2;
 
-    &::before {
-      top: -53px;
+    svg {
+      top: -54px;
       left: 43px;
     }
   }
@@ -151,14 +156,14 @@
   .making__description {
     margin-left: calc(72.4%);
     width: 288px;
-    margin-top: -280px;
+    margin-top: -284px;
     order: 3;
   }
 
   .making__button {
     position: absolute;
-    right: calc(5.4%);
-    bottom: 16px;
+    right: calc(5.5%);
+    bottom: 15px;
     width: calc(21.9%);
   }
 }
