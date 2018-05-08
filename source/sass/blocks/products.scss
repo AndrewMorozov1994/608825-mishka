@@ -9,7 +9,7 @@
     bottom: -43px;
     width: 100%;
     height: 6px;
-    background-image: url("../../img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
     background-position: center;
     background-repeat: repeat-x;
   }
@@ -29,6 +29,8 @@
 @media (min-width: 1250px) {
   .products {
     &::after {
+      width: calc(84%);
+      margin-left: 8%;
       height: 23px;
       bottom: -96px;
     }

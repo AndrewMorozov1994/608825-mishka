@@ -29,11 +29,11 @@
   top: 28px;
   width: 20px;
   min-height: 14px;
-  background: white no-repeat center url("../../img/icon-menu-close.svg");
+  background: white no-repeat center url("../img/icon-menu-close.svg");
   border: none;
 
   &--closed {
-    background: no-repeat url("../../img/icon-menu-open.svg") center;
+    background: no-repeat url("../img/icon-menu-open.svg") center;
   }
 }
 

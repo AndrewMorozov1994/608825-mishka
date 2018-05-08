@@ -51,6 +51,10 @@
   margin: 0 auto;
 }
 
+.catalog__svg-link {
+  fill: rgba(34, 31, 32, 0.2);
+}
+
 .catalog__description {
   font-size: 13px;
   font-weight: 400;
@@ -122,8 +126,6 @@
   }
 
   .catalog__svg-link {
-    fill: rgba(34, 31, 32, 0.2);
-
     &:hover {
       fill: #63d1bb;
     }
