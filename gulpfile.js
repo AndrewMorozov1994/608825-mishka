@@ -11,6 +11,7 @@ var rename = require("gulp-rename");
 var webp = require("gulp-webp");
 var minifycss = require("gulp-csso");
 var minjs = require("gulp-uglify");
+var minhtml = require("gulp-htmlmin");
 var imagemin = require("gulp-imagemin");
 var posthtml = require("gulp-posthtml");
 var run = require("run-sequence");
@@ -34,6 +35,12 @@ gulp.task("minjs", function () {
   gulp.src("source/js/*.js")
     .pipe(minjs())
     .pipe(gulp.dest("build/js"))
+});
+
+gulp.task("minhtml", function() {
+  return gulp.src('source/*.html')
+    .pipe(minhtml({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("serve", function() {
@@ -100,6 +107,7 @@ gulp.task("build", function (done) {
     "clean",
     "copy",
     "minjs",
+    "minhtml",
     "style",
     done
   );
