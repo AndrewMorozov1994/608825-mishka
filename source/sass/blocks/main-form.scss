@@ -8,6 +8,7 @@
 
 .main-form__description-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-form__line {
@@ -27,6 +28,7 @@
   margin: 0;
   margin-top: 18px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-form__section {
@@ -139,6 +141,7 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
 
 .main-form__item-wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   position: relative;
 
@@ -190,18 +193,21 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
 
 .main-form__user-name {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-top: 18px;
 }
 
 .main-form__user-surname {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-top: 18px;
 }
 
 .main-form__user-patronymic {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-top: 18px;
 }
@@ -379,6 +385,10 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
       font-size: 19px;
 
       &:hover {
+        border-color: #63d1bb;
+      }
+
+      &:active {
         border-color: #63d1bb;
       }
     }

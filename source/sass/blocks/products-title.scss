@@ -123,6 +123,7 @@
   .products-title__list-container {
     width: calc(87%);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: -118px calc(6.5%) 0 calc(6.5%);
   }
