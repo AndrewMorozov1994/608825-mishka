@@ -8,7 +8,6 @@
 
 .main-form__description-wrapper {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .main-form__line {
@@ -31,6 +30,11 @@
   flex-wrap: wrap;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
 .main-form__section {
   display: flex;
   flex-wrap: wrap;
@@ -43,7 +47,7 @@
   }
 
   &--users-info {
-    margin-top: -12px;
+    margin-top: 24px;
     margin-bottom: 39px;
 
     input[type="text"] {

@@ -18,7 +18,6 @@
   min-height: 177px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   margin-top: 1px;
   min-width: 320px;
   border-top: 1px solid #ececec;
@@ -28,6 +27,7 @@
   font-size: 27px;
   line-height: 30px;
   padding-bottom: 5px;
+  margin-top: 71px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -76,7 +76,7 @@
   .page-main__title {
     font-size: 43px;
     line-height: 50px;
-    margin-top: 50px;
+    margin-top: 96px;
   }
 }
 
@@ -92,7 +92,7 @@
   .page-main__title {
     font-size: 53px;
     line-height: 57px;
-    margin-top: 34px;
+    margin-top: 93px;
   }
 
   .page-main__title-wrapper {
