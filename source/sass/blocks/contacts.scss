@@ -10,16 +10,13 @@
     top: -46px;
     width: calc(100%);
     height: 6px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-position: center;
-    background-repeat: repeat-x;
+    background: repeat-x center url("../img/bg-zigzag-line.svg");
   }
 }
 
 .contacts__title {
   font-size: 18px;
-  margin: 0;
-  margin-left: -2px;
+  margin: 0 0 0 -2px;
   padding: 0 calc(9.375%);
 }
 
@@ -121,8 +118,7 @@
       height: 81px;
       right: calc(6.2%);
       top: -14px;
-      background-image: url("../img/icon-flag.svg");
-      background-repeat: no-repeat;
+      background: no-repeat url("../img/icon-flag.svg");
     }
   }
 
@@ -216,9 +212,7 @@
     margin-top: -167px;
 
     .contacts__send-us {
-      margin: 0;
-      margin-top: -100px;
-      margin-right: auto;
+      margin: -100px auto 0 0;
       width: calc(26.3%);
     }
   }
@@ -230,9 +224,8 @@
 
   .contacts__list {
     width: calc(34.3%);
-    margin: 0;
+    margin: 0 0 117px 0;
     padding: 0;
-    margin-bottom: 117px;
   }
 
   .contacts__item {

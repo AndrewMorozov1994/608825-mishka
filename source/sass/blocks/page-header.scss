@@ -78,10 +78,9 @@
   .page-header--within {
     justify-content: space-between;
     width: 1050px;
-    margin: 0 auto;
+    margin: -1px auto 0 auto;
     display: flex;
     flex-direction: row;
-    margin-top: -1px;
 
     .page-header__logo-container {
       width: 156px;

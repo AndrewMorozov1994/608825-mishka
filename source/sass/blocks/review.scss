@@ -20,8 +20,7 @@
 
 .review__user-contact {
   font-weight: 400;
-  margin: 0;
-  margin-top: 5px;
+  margin: 5px 0 0 0;
 }
 
 .review__user-and-buttons-wrapper {
@@ -82,8 +81,7 @@
       left: 0;
       width: 350px;
       min-height: 457px;
-      background-image: url("../img/review@1x.jpg");
-      background-color: #f3f3f3;
+      background: #f3f3f3 url("../img/review@1x.jpg");
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/review@2x.jpg");

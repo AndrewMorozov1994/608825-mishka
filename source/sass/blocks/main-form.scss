@@ -2,8 +2,7 @@
   width: calc(81.25%);
   padding: 0 calc(9.375%);
   min-width: 260px;
-  margin: 0 auto;
-  margin-top: 8px;
+  margin: 8px auto 0 auto;
 }
 
 .main-form__description-wrapper {
@@ -24,8 +23,7 @@
   box-sizing: border-box;
   color: #63d1bb;
   line-height: 16px;
-  margin: 0;
-  margin-top: 18px;
+  margin: 18px 0 0 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -137,10 +135,8 @@ input[type="radio"]:checked + .main-form__radio-indicator {
 }
 
 input[type="checkbox"]:checked + .main-form__check-indicator {
-  background-image: url("../img/icon-tick.svg");
-  background-repeat: no-repeat;
+  background: no-repeat url("../img/icon-tick.svg") center center;
   background-size: 70%;
-  background-position: center center;
 }
 
 .main-form__item-wrapper {

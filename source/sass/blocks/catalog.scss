@@ -37,8 +37,7 @@
 }
 
 .catalog__item-title {
-  margin: auto;
-  margin-top: 27px;
+  margin: 27px auto auto auto;
   width: 233px;
   box-sizing: border-box;
   padding-left: 15px;
@@ -60,8 +59,7 @@
   font-weight: 400;
   line-height: 30px;
   color: #444444;
-  margin: auto;
-  margin-top: 4px;
+  margin: 4px auto auto auto;
   width: 233px;
   box-sizing: border-box;
   padding-left: 15px;
@@ -69,8 +67,7 @@
 
 .catalog__price {
   font-size: 15px;
-  margin: auto;
-  margin-top: 19px;
+  margin: 19px auto auto auto;
   padding-top: 20px;
   padding-bottom: 28px;
   display: flex;

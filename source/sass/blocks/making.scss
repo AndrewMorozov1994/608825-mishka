@@ -128,9 +128,7 @@
     width: calc(91.3%);
     min-height: 455px;
     max-width: 1350px;
-    margin: 0 auto;
-    margin-top: 1px;
-    margin-bottom: 105px;
+    margin: 1px auto 105px auto;
   }
 
   .making__title {
@@ -150,8 +148,7 @@
   .making__video {
     width: 682px;
     order: 1;
-    margin: 0;
-    margin-top: -1px;
+    margin: -1px 0 0 0;
   }
 
   .making__description {
