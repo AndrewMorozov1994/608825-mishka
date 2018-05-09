@@ -1,5 +1,5 @@
 .products {
-  width: calc(100%);
+  width: 100%;
   position: relative;
 
   &::after {
@@ -25,7 +25,7 @@
 @media (min-width: 1250px) {
   .products {
     &::after {
-      width: calc(84%);
+      width: 84%;
       margin-left: 8%;
       height: 23px;
       bottom: -96px;

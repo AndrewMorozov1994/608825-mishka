@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  width: calc(100%);
+  width: 100%;
 
   .site-list__item {
     &:nth-child(3) {
@@ -79,7 +79,7 @@
 
 @media (max-width: 767px) {
   .site-list {
-    width: calc(100%);
+    width: 100%;
 
     &--closed {
       display: none;

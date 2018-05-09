@@ -1,5 +1,5 @@
 .products-title {
-  width: calc(100%);
+  width: 100%;
   position: relative;
 }
 
@@ -44,7 +44,7 @@
     background-color: #63d1bb;
     display: flex;
     justify-content: space-between;
-    padding: 21px calc(9.3%) 18px calc(9.3%);
+    padding: 21px 9.3% 18px 9.3%;
   }
 
   span {
@@ -64,7 +64,7 @@
   &--toys {
     a {
       background-color: #56c3b2;
-      padding: 21px calc(9.3%);
+      padding: 21px 9.3%;
     }
 
     svg {
@@ -110,11 +110,11 @@
   }
 
   .products-title__list-container {
-    width: calc(87%);
+    width: 87%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: -118px calc(6.5%) 0 calc(6.5%);
+    margin: -118px 6.5% 0 6.5%;
   }
 
   .products-title__list-item {
@@ -136,7 +136,7 @@
 
     &--interior {
       a {
-        padding: 23px calc(9.3%) 25px calc(9.3%);
+        padding: 23px 9.3% 25px 9.3%;
       }
 
       svg {
@@ -167,7 +167,7 @@
 
     &--toys {
       a {
-        padding: 23px calc(9.3%) 26px calc(9.3%);
+        padding: 23px 9.3% 26px 9.3%;
       }
 
       svg {
@@ -214,14 +214,14 @@
 
   .products-title__list-container {
     margin: -119px auto 0 auto;
-    width: calc(84%);
+    width: 84%;
     max-width: 1350px;
     box-sizing: border-box;
   }
 
   .products-title__list-item {
     a {
-      padding-left: calc(6.3%);
+      padding-left: 6.3%;
     }
 
     svg {

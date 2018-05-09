@@ -30,7 +30,8 @@
 
 input[type="radio"],
 input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  left: -9999px;
 }
 
 .main-form__section {
@@ -126,15 +127,6 @@ input[type="checkbox"] {
   border: 2px solid black;
   left: -62px;
   top: -12px;
-}
-
-input[type="radio"]:checked + .main-form__radio-indicator {
-  background-color: #63d1bb;
-}
-
-input[type="checkbox"]:checked + .main-form__check-indicator {
-  background: no-repeat url("../img/icon-tick.svg") center center;
-  background-size: 70%;
 }
 
 .main-form__item-wrapper {
@@ -273,6 +265,23 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
     display: none;
   }
 
+  input[type="radio"]:focus + .main-form__radio-indicator {
+    box-shadow: 0 0 0 14px white, 0 0 0 16px #63d1bb;
+  }
+
+  input[type="checkbox"]:focus + .main-form__check-indicator {
+    border-color: #63d1bb;
+  }
+
+  input[type="radio"]:checked + .main-form__radio-indicator {
+    background-color: #63d1bb;
+  }
+
+  input[type="checkbox"]:checked + .main-form__check-indicator {
+    background: no-repeat url("../img/icon-tick.svg") center center;
+    background-size: 70%;
+  }
+
   .main-form__item {
     font-size: 19px;
     margin: 0;
@@ -303,15 +312,15 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
   }
 
   .main-form__description-wrapper {
-    width: calc(25%);
+    width: 25%;
   }
 
   .main-form__item-wrapper {
-    width: calc(75%);
+    width: 75%;
     box-sizing: border-box;
 
     &--radio {
-      padding-left: calc(12%);
+      padding-left: 12%;
 
       .main-form__item {
         margin-top: 10px;
@@ -329,9 +338,9 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
 
       .main-form__item {
         box-sizing: border-box;
-        padding-left: calc(16%);
+        padding-left: 16%;
         margin-top: 58px;
-        width: calc(50%);
+        width: 50%;
 
         &:nth-child(2),
         &:nth-child(4),
@@ -366,7 +375,7 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
 
   .main-form__section {
     flex-direction: row;
-    width: calc(86.98%);
+    width: 86.98%;
     margin: 0 auto;
 
     &--check {
@@ -455,11 +464,11 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
   .main-form__user-phone,
   .main-form__user-email,
   .main-form__user-wishes {
-    width: calc(25%);
+    width: 25%;
   }
 
   .main-form__bottom {
-    width: calc(86.98%);
+    width: 86.98%;
     margin: 26px auto 0 auto;
     display: flex;
     justify-content: space-between;
@@ -467,7 +476,7 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
   }
 
   .main-form__send {
-    width: calc(34.4%);
+    width: 34.4%;
     margin: 0;
   }
 
@@ -481,12 +490,12 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
 
 @media (min-width: 1150px) {
   .main-form__section {
-    width: calc(91.3%);
+    width: 91.3%;
     max-width: 1350px;
 
     &--users-info {
       .main-form__item-wrapper {
-        width: calc(66.66%);
+        width: 66.66%;
         margin-left: 6px;
       }
     }
@@ -495,22 +504,22 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
     &--email,
     &--wishes {
       .main-form__item-wrapper {
-        width: calc(66.66%);
+        width: 66.66%;
       }
     }
   }
 
   .main-form__description-wrapper {
-    width: calc(16.66%);
+    width: 16.66%;
     justify-content: space-around;
     margin-left: -6px;
   }
 
   .main-form__item-wrapper {
-    width: calc(83.33%);
+    width: 83.33%;
 
     &--radio {
-      padding-left: calc(8.2%);
+      padding-left: 8.2%;
     }
 
     &--check {
@@ -521,7 +530,7 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
           padding-left: 84px;
         }
 
-        width: calc(30.28%);
+        width: 30.28%;
         padding-left: 84px;
       }
     }
@@ -538,10 +547,10 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
   .main-form__description-wrapper--phone,
   .main-form__description-wrapper--email,
   .main-form__description-wrapper--wishes {
-    width: calc(17.26%);
+    width: 17.26%;
     justify-content: flex-start;
     box-sizing: border-box;
-    padding-left: calc(6.5%);
+    padding-left: 6.5%;
   }
 
   .main-form__icon-phone {
@@ -553,13 +562,13 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
   }
 
   .main-form__bottom {
-    width: calc(60.87%);
+    width: 60.87%;
     max-width: 1350px;
     margin: 21px auto 0 auto;
   }
 
   .main-form__send {
-    width: calc(32.85%);
+    width: 32.85%;
   }
 
   .main-form__legend {

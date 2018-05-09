@@ -1,10 +1,10 @@
 .modal {
   display: none;
   position: fixed;
-  width: calc(100%);
+  width: 100%;
   min-width: 320px;
   min-height: 311px;
-  top: calc(35%);
+  top: 35%;
   z-index: 100;
 
   &--opened {
@@ -31,7 +31,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(100%);
+  width: 100%;
   min-width: 320px;
   height: calc(1000vw);
   background-color: rgba(255, 255, 255, 0.9);
@@ -60,7 +60,7 @@
 }
 
 .modal__radio {
-  width: calc(100%);
+  width: 100%;
 }
 
 .modal__label-wrapper {

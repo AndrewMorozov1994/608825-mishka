@@ -1,10 +1,10 @@
 .page-main {
-  width: calc(100%);
+  width: 100%;
 }
 
 .page-main__description {
-  width: calc(81.25%);
-  padding: 0 calc(9.375%);
+  width: 81.25%;
+  padding: 0 9.375%;
   min-width: 260px;
   font-size: 13px;
   font-weight: 400;
@@ -47,7 +47,7 @@
   }
 
   .page-main__description {
-    width: calc(86.98%);
+    width: 86.98%;
     font-size: 17px;
     line-height: 30px;
     padding: 0;
@@ -100,7 +100,7 @@
   }
 
   .page-main__description {
-    width: calc(60.87%);
+    width: 60.87%;
     max-width: 1350px;
     margin: 125px auto 0 auto;
   }

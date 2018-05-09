@@ -42,8 +42,10 @@
   width: 102px;
   height: 78px;
   background-image: url("../img/icon-play.svg");
+  background-size: cover;
   top: calc(50% - 39px);
   left: calc(50% - 51px);
+  transition: transform 0.2s;
 
   &:hover {
     transform: scale(1.2);
@@ -97,7 +99,7 @@
   .making__title {
     font-size: 20px;
     width: 250px;
-    margin-left: calc(15.7%);
+    margin-left: 15.7%;
     margin-top: 34px;
     order: 2;
 
@@ -108,16 +110,16 @@
   }
 
   .making__description {
-    width: calc(87.7%);
+    width: 87.7%;
     margin-top: 14px;
-    margin-left: calc(6%);
+    margin-left: 6%;
     font-size: 15px;
     line-height: 30px;
     order: 3;
   }
 
   .making__button {
-    width: calc(87.4%);
+    width: 87.4%;
     margin-top: 35px;
     margin-bottom: 45px;
   }
@@ -126,7 +128,7 @@
 @media (min-width: 1150px) {
   .making {
     position: relative;
-    width: calc(91.3%);
+    width: 91.3%;
     min-height: 455px;
     max-width: 1350px;
     margin: 1px auto 105px auto;
@@ -136,7 +138,7 @@
     width: 220px;
     padding-left: 40px;
     margin-left: auto;
-    margin-right: calc(6.7%);
+    margin-right: 6.7%;
     margin-top: 95px;
     order: 2;
 
@@ -153,7 +155,7 @@
   }
 
   .making__description {
-    margin-left: calc(72.4%);
+    margin-left: 72.4%;
     width: 288px;
     margin-top: -284px;
     order: 3;
@@ -161,8 +163,8 @@
 
   .making__button {
     position: absolute;
-    right: calc(5.5%);
+    right: 5.5%;
     bottom: 15px;
-    width: calc(21.9%);
+    width: 21.9%;
   }
 }
