@@ -134,11 +134,8 @@
     &:last-child {
       justify-content: flex-end;
       font-size: 17px;
-      flex-wrap: wrap;
       width: 470px;
-      margin: 0;
-      margin-left: auto;
-      margin-top: -162px;
+      margin: -162px 0 0 auto;
 
       .site-list__container {
         text-align: right;
@@ -211,7 +208,6 @@
       margin: 0;
       display: flex;
       width: 470px;
-      flex-wrap: wrap;
       order: 1;
 
       .site-list__item {

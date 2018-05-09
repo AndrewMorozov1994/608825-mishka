@@ -23,7 +23,6 @@
 .contacts__wrapper {
   .contacts__send-us {
     width: calc(81.25%);
-    text-align: center;
     margin: 34px auto 0 auto;
     padding: 13px 0 15px 0;
     font-size: 18px;
@@ -94,7 +93,6 @@
 
 @media (min-width: 768px) {
   .contacts {
-    width: calc(100%);
     margin-top: 191px;
 
     &::before {

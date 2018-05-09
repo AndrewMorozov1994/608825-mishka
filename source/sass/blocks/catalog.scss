@@ -174,8 +174,6 @@
 
   .catalog__list {
     margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
     width: calc(91.3%);
     max-width: 1350px;
     justify-content: space-between;
@@ -204,7 +202,6 @@
   }
 
   .catalog__price {
-    margin-bottom: -2px;
     padding-top: 23px;
     margin-left: calc(7.9%);
   }
