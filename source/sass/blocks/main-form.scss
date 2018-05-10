@@ -28,12 +28,6 @@
   flex-wrap: wrap;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-  position: absolute;
-  left: -9999px;
-}
-
 .main-form__section {
   display: flex;
   flex-wrap: wrap;
@@ -130,21 +124,17 @@ input[type="checkbox"] {
   top: -12px;
 }
 
-input[type="radio"]:checked + .main-form__radio-indicator {
-  background-color: #63d1bb;
-  box-shadow: inset 0 0 0 10px white;
-}
-
-input[type="checkbox"]:checked + .main-form__check-indicator {
-  background: no-repeat url("../img/icon-tick.svg") center center;
-  background-size: 70%;
-}
-
 .main-form__item-wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   position: relative;
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+  }
 
   &--radio {
     margin-top: 6px;
@@ -183,6 +173,16 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
         opacity: 1;
       }
     }
+  }
+
+  input[type="radio"]:checked + .main-form__radio-indicator {
+    background-color: #63d1bb;
+    box-shadow: inset 0 0 0 10px white;
+  }
+
+  input[type="checkbox"]:checked + .main-form__check-indicator {
+    background: no-repeat url("../img/icon-tick.svg") center center;
+    background-size: 70%;
   }
 }
 
@@ -275,16 +275,6 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
     display: none;
   }
 
-  input[type="radio"]:focus + .main-form__radio-indicator,
-  input[type="radio"]:checked + .main-form__radio-indicator {
-    background-color: #63d1bb;
-    box-shadow: inset 0 0 0 13px white;
-  }
-
-  input[type="checkbox"]:focus + .main-form__check-indicator {
-    border-color: #63d1bb;
-  }
-
   .main-form__item {
     font-size: 19px;
     margin: 0;
@@ -373,6 +363,16 @@ input[type="checkbox"]:checked + .main-form__check-indicator {
       &:active {
         border-color: #63d1bb;
       }
+    }
+
+    input[type="radio"]:focus + .main-form__radio-indicator,
+    input[type="radio"]:checked + .main-form__radio-indicator {
+      background-color: #63d1bb;
+      box-shadow: inset 0 0 0 13px white;
+    }
+
+    input[type="checkbox"]:focus + .main-form__check-indicator {
+      border-color: #63d1bb;
     }
   }
 

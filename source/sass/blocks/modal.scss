@@ -61,6 +61,17 @@
 
 .modal__radio {
   width: 100%;
+
+  input {
+    position: absolute;
+    left: -9999px;
+  }
+
+  input[id="radio1"]:checked ~ .modal__label-wrapper label[for="radio1"],
+  input[id="radio2"]:checked ~ .modal__label-wrapper label[for="radio2"],
+  input[id="radio3"]:checked ~ .modal__label-wrapper label[for="radio3"] {
+    border-color: #63d1bb;
+  }
 }
 
 .modal__label-wrapper {
@@ -77,12 +88,6 @@
   align-self: center;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-input[id="radio1"]:checked ~ .modal__label-wrapper label[for="radio1"],
-input[id="radio2"]:checked ~ .modal__label-wrapper label[for="radio2"],
-input[id="radio3"]:checked ~ .modal__label-wrapper label[for="radio3"] {
-  border-color: #63d1bb;
 }
 
 .modal__button {
