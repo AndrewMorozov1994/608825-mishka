@@ -1,6 +1,6 @@
 .main-form {
-  width: calc(81.25%);
-  padding: 0 calc(9.375%);
+  width: 81.25%;
+  padding: 0 9.375%;
   min-width: 260px;
   margin: 8px auto 0 auto;
 }
@@ -11,8 +11,8 @@
 
 .main-form__line {
   border-top: 1px solid #63d1bb;
-  width: calc(100%);
-  margin-left: calc(7.6%);
+  width: 100%;
+  margin-left: 7.6%;
   height: 1px;
   margin-top: 24px;
 }
@@ -90,7 +90,7 @@
 
 .main-form__item {
   line-height: 18px;
-  width: calc(76%);
+  width: 76%;
   margin-left: auto;
   margin-top: 25px;
   position: relative;
@@ -239,7 +239,7 @@
 
 @media (min-width: 768px) {
   .main-form {
-    width: calc(100%);
+    width: 100%;
     margin: 57px auto 0 auto;
     padding: 0;
 
