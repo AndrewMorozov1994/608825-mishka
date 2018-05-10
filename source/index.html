@@ -4,13 +4,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
   <body>
     <header class="page-header page-header--index">
       <div class="page-header__logo-container">
         <picture>
-          <source media="(min-width: 1250px" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип" width="86" height="35">
         </picture>
@@ -19,22 +19,22 @@
       <ul class="site-list site-list--index">
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="catalog.html">Каталог товаров</a>
+            <a href="catalog.html"><span>Каталог товаров</span></a>
           </div>
         </li>
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="form.html">Вязание на заказ</a>
+            <a href="form.html"><span>Вязание на заказ</span></a>
           </div>
         </li>
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="#">Новые поступления</a>
+            <a href="#"><span>Новые поступления</span></a>
           </div>
         </li>
         <li class="site-list__item">
           <div class="site-list__container">
-            <a href="#">Распродажа</a>
+            <a href="#"><span>Распродажа</span></a>
           </div>
         </li>
       </ul>
@@ -57,7 +57,7 @@
         </li>
         <li class="site-list__item">
           <div class="site-list__container">
-            <a class="site-list__delivery" href="#">Бесплатная доставка по России</a>
+            <a class="site-list__delivery" href="#"><span>Бесплатная доставка по России</span></a>
           </div>
         </li>
       </ul>
@@ -82,9 +82,6 @@
               </a>
             </li>
           </ul>
-          <!--<div class="products-title__zigzag">-->
-            <!--<svg width="100%"><use xlink:href="img/sprite.svg#bg-zigzag-fill"></use></svg>-->
-          <!--</div>-->
         </div>
         <div class="products-item">
           <div class="products-item__title-wrapper">
@@ -111,6 +108,10 @@
             </div>
             <div class="products-item__image">
               <picture>
+                <source type="image/webp" media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
                 <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязанные корзинки">
@@ -190,11 +191,15 @@
             </ul>
             <div class="contacts__map">
               <picture>
+                <source type="image/webp" media="(min-width: 1250px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1250px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
                 <img class="contacts__image-map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
               </picture>
-              <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/-/CBqjiIBz~A" width="100%" height="457" frameborder="0"></iframe>
+              <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/-/CBqjiIBz~A" style="width:100%" height="457"></iframe>
             </div>
             <a class="contacts__send-us button-link" href="#">Напишите нам</a>
           </div>
@@ -216,7 +221,7 @@
               <label for="radio3" class="modal__label">L</label>
             </div>
           </div>
-          <button class="button modal__button" type="submit">Добавить</button>
+          <button class="button-link modal__button" type="submit">Добавить</button>
         </form>
       </section>
       <div class="modal__overlay"></div>
@@ -224,7 +229,9 @@
     <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper">
         <a href="#">
-        <svg class="page-footer__logo-mishka" width="102" height="34"><use xlink:href="img/sprite.svg#logo-tablet"></use></svg>
+          <svg class="page-footer__logo-mishka" width="102" height="34">
+            <use width="102" xlink:href="img/sprite.svg#logo-tablet"></use>
+          </svg>
         </a>
         <ul class="page-footer__list">
           <li class="page-footer__item page-footer__item--inst">
@@ -246,14 +253,14 @@
             </a>
           </li>
         </ul>
-        <div class="page-footer__bottom">
+        <a class="page-footer__bottom" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="page-footer__studio">Разработано</p>
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="page-footer__logo" width="27" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
-          </a>
-        </div>
+          <svg class="page-footer__logo" width="27" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
+        </a>
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script defer src="js/svgxuse.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

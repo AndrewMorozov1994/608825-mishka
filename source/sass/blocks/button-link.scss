@@ -5,6 +5,16 @@
   display: block;
   text-align: center;
   box-sizing: border-box;
-  border: 2px solid black;
-  width: calc(100%);
+  border: 2px solid #444444;
+  width: 100%;
+
+  &:hover {
+    background-color: #444444;
+    color: white;
+  }
+
+  &:active {
+    background-color: #444444;
+    color: #7c7c7c;
+  }
 }

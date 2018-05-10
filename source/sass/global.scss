@@ -6,6 +6,7 @@
     url("../fonts/opensans.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -16,6 +17,7 @@
     url("../fonts/opensansbold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
 }
 
 body {
@@ -33,6 +35,6 @@ a {
 }
 
 img {
-  max-width: calc(100%);
+  max-width: 100%;
   height: auto;
 }

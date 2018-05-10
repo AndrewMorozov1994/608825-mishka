@@ -1,5 +1,5 @@
 .products-title {
-  width: calc(100%);
+  width: 100%;
   position: relative;
 }
 
@@ -8,29 +8,24 @@
   font-weight: 700;
   line-height: 30px;
   width: 250px;
-  padding: 35px;
-  padding-top: 74px;
+  padding: 74px 35px 35px 35px;
   margin: 0 auto;
   text-align: center;
 }
 
 .products-title__title-wrapper {
-  background-color: #f9f9f9;
-  background-image: url("../../img/hero-mobile@1x.jpg");
-  background-position: center -15px;
-  background-repeat: no-repeat;
+  background: #f9f9f9 no-repeat center -15px url("../img/hero-mobile@1x.jpg");
   min-height: 385px;
   min-width: 320px;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../../img/hero-mobile@2x.jpg");
+    background: no-repeat url("../img/hero-mobile@2x.jpg");
     background-size: 1150px auto;
   }
 }
 
 .products-title__list-container {
-  margin: 0;
-  margin-top: -100px;
+  margin: -100px 0 0 0;
   padding: 0;
   list-style: none;
 }
@@ -49,7 +44,7 @@
     background-color: #63d1bb;
     display: flex;
     justify-content: space-between;
-    padding: 21px calc(9.3%) 18px calc(9.3%);
+    padding: 21px 9.3% 18px 9.3%;
   }
 
   span {
@@ -69,11 +64,11 @@
   &--toys {
     a {
       background-color: #56c3b2;
-      padding: 21px calc(9.3%);
+      padding: 21px 9.3%;
     }
 
     svg {
-      margin-right: 0;
+      margin-right: -3px;
       padding-top: 0;
     }
   }
@@ -85,17 +80,14 @@
 
 @media (min-width: 768px) {
   .products-title {
-    width: calc(100%);
-
     &::after {
       content: "";
       display: block;
       position: absolute;
-      bottom: -5px;
+      bottom: -13px;
       width: 100%;
       height: 24px;
-      background-image: url("../../img/bg-zigzag-fill.svg");
-      background-position: center;
+      background: center 0 url("../img/bg-zigzag-fill.svg");
     }
   }
 
@@ -104,27 +96,25 @@
     font-size: 43px;
     line-height: 50px;
     text-align: center;
-    margin: 0 auto;
     padding-top: 154px;
   }
 
   .products-title__title-wrapper {
-    background-color: #f9f9f9;
-    background-image: url("../../img/hero-tablet@1x.jpg");
-    background-position: top center;
+    background: #f9f9f9 top center no-repeat url("../img/hero-tablet@1x.jpg");
     min-height: 745px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../../img/hero-tablet@2x.jpg");
+      background-image: url("../img/hero-tablet@2x.jpg");
       background-size: 2300px auto;
     }
   }
 
   .products-title__list-container {
-    width: calc(87%);
+    width: 87%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: -118px calc(6.5%) 0 calc(6.5%);
+    margin: -118px 6.5% 0 6.5%;
   }
 
   .products-title__list-item {
@@ -133,6 +123,11 @@
     a {
       font-size: 20px;
       line-height: 30px;
+
+      &:hover {
+        padding-bottom: 30px;
+        margin-top: -5px;
+      }
     }
 
     span {
@@ -141,23 +136,63 @@
 
     &--interior {
       a {
-        padding: 23px calc(9.3%) 25px calc(9.3%);
+        padding: 23px 9.3% 25px 9.3%;
       }
 
       svg {
         margin-top: 4px;
         margin-right: 5px;
       }
+
+      &:hover {
+        a {
+          background-color: #59d5bc;
+        }
+
+        svg {
+          fill: rgba(20, 144, 128, 0.7);
+        }
+      }
+
+      :active {
+        span {
+          opacity: 0.3;
+        }
+
+        svg {
+          fill: rgba(20, 144, 128, 0.3);
+        }
+      }
     }
 
     &--toys {
       a {
-        padding: 23px calc(9.3%) 26px calc(9.3%);
+        padding: 23px 9.3% 26px 9.3%;
       }
 
       svg {
         padding-top: 8px;
         margin-right: 3px;
+      }
+
+      &:hover {
+        a {
+          background-color: #46c1ae;
+        }
+
+        svg {
+          fill: rgba(20, 144, 128, 0.7);
+        }
+      }
+
+      &:active {
+        span {
+          opacity: 0.3;
+        }
+
+        svg {
+          fill: rgba(20, 144, 128, 0.3);
+        }
       }
     }
   }
@@ -166,12 +201,9 @@
 @media (min-width: 1250px) {
   .products-title {
     &::after {
-      height: 34px;
+      height: 37px;
+      bottom: -22px;
     }
-  }
-
-  .products-title__title-wrapper {
-    min-height: 745px;
   }
 
   .products-title__title {
@@ -181,15 +213,15 @@
   }
 
   .products-title__list-container {
-    margin: -120px auto 0 auto;
-    width: calc(84%);
+    margin: -119px auto 0 auto;
+    width: 84%;
     max-width: 1350px;
     box-sizing: border-box;
   }
 
   .products-title__list-item {
     a {
-      padding-left: calc(6.3%);
+      padding-left: 6.3%;
     }
 
     svg {
