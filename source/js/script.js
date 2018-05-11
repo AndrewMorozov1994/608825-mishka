@@ -26,14 +26,14 @@ buttontoggle.addEventListener("click", function (evt) {
   }
 });
 
-if(buttonopen) {
+if (buttonopen) {
   buttonopen.addEventListener("click", function (evt) {
     evt.preventDefault();
     modalwindow.classList.add("modal--opened");
   });
 }
 
-if(catalogLink) {
+if (catalogLink) {
   for (var j = 0; j < catalogLink.length; j++) {
     catalogLink[j].addEventListener("click", function (evt) {
       evt.preventDefault();
