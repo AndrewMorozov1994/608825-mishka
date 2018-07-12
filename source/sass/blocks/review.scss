@@ -11,6 +11,21 @@
   margin-left: -2px;
 }
 
+.review__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  width: 300%;
+
+  li {
+    max-width: 33.3%;
+  }
+}
+
+.review__wrapper-list {
+  overflow: hidden;
+}
+
 .review__user-review {
   font-size: 15px;
   font-weight: 400;

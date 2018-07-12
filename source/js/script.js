@@ -4,6 +4,10 @@ var buttonopen = document.querySelector(".products-item__link");
 var modalwindow = document.querySelector(".modal");
 var modalclose = document.querySelector(".modal__button");
 var catalogLink = document.querySelectorAll(".catalog__svg-link");
+var sliderWrapper = document.querySelector(".review__list");
+var nextSlideButton = sliderWrapper.querySelectorAll(".review__button--next");
+var prewSlideButton = sliderWrapper.querySelectorAll(".review__button--prew");
+var offsetSliderSlides = 0;
 
 for (var i = 0; i < nav.length; i++){
   nav[i].classList.add("site-list--closed");
@@ -55,3 +59,21 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+var seeNextSlide = function () {
+  offsetSliderSlides = (offsetSliderSlides - sliderWrapper.offsetWidth / 3) % -sliderWrapper.offsetWidth;
+  sliderWrapper.style.marginLeft = offsetSliderSlides + 'px';
+};
+
+var seePrewSlide = function () {
+  if (offsetSliderSlides === 0) {
+    offsetSliderSlides = -sliderWrapper.offsetWidth;
+  }
+  offsetSliderSlides = (offsetSliderSlides + sliderWrapper.offsetWidth / 3);
+  sliderWrapper.style.marginLeft = offsetSliderSlides + 'px';
+};
+
+for (var b = 0; b < nextSlideButton.length; b++) {
+  nextSlideButton[b].addEventListener('click', seeNextSlide);
+  prewSlideButton[b].addEventListener('click', seePrewSlide);
+}
